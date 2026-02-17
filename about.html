@@ -196,7 +196,8 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
                 
                 <!-- Project 1 -->
-                <div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: transform 0.3s;">
+                <div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: transform 0.3s; cursor: pointer;"
+                     onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
                     <div style="height: 220px; background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); display: flex; align-items: center; justify-content: center; font-size: 60px;">
                         🌐
                     </div>
@@ -210,12 +211,20 @@
                             <span style="background: #e8f5e9; color: #388e3c; padding: 5px 15px; border-radius: 15px; font-size: 14px;">Node.js</span>
                             <span style="background: #fff3e0; color: #f57c00; padding: 5px 15px; border-radius: 15px; font-size: 14px;">MongoDB</span>
                         </div>
-                        <a href="#" style="color: #3498db; text-decoration: none; font-weight: bold;">عرض المشروع →</a>
+                        <a href="https://github.com/AmeedSalama/ecommerce-project" target="_blank" 
+                           style="display: inline-flex; align-items: center; gap: 8px; background: #2c3e50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 8px; font-weight: bold; transition: all 0.3s ease;"
+                           onmouseover="this.style.background='#3498db'" onmouseout="this.style.background='#2c3e50'">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                            عرض على GitHub
+                        </a>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                <div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: transform 0.3s; cursor: pointer;"
+                     onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
                     <div style="height: 220px; background: linear-gradient(135deg, #16a085 0%, #1abc9c 100%); display: flex; align-items: center; justify-content: center; font-size: 60px;">
                         📱
                     </div>
@@ -225,15 +234,23 @@
                             تطبيق ويب لإدارة المهام والمشاريع بكفاءة مع إمكانية التعاون بين الفرق.
                         </p>
                         <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 15px;">
-                            <span style="background: #e3f2fd; color: #1976d2; padding: 5px 15px; border-radius: 15px; font-size: 14px;">Vue.js</span>
-                            <span style="background: #fce4ec; color: #c2185b; padding: 5px 15px; border-radius: 15px; font-size: 14px;">Firebase</span>
+                            <span style="background: #e3f2fd; color: #1976d2; padding: 5px 15px; border-radius: 15px; font-size: 14px;">Next.js</span>
+                            <span style="background: #fce4ec; color: #c2185b; padding: 5px 15px; border-radius: 15px; font-size: 14px;">TypeScript</span>
                         </div>
-                        <a href="#" style="color: #16a085; text-decoration: none; font-weight: bold;">عرض المشروع →</a>
+                        <a href="https://github.com/AmeedSalama/task-manager" target="_blank" 
+                           style="display: inline-flex; align-items: center; gap: 8px; background: #16a085; color: white; padding: 10px 20px; text-decoration: none; border-radius: 8px; font-weight: bold; transition: all 0.3s ease;"
+                           onmouseover="this.style.background='#1abc9c'" onmouseout="this.style.background='#16a085'">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                            عرض على GitHub
+                        </a>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
-                <div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                <div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: transform 0.3s; cursor: pointer;"
+                     onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
                     <div style="height: 220px; background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); display: flex; align-items: center; justify-content: center; font-size: 60px;">
                         💼
                     </div>
@@ -243,15 +260,23 @@
                             موقع شخصي احترافي لعرض الأعمال والمشاريع مع تصميم متجاوب وأنيميشن جذابة.
                         </p>
                         <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 15px;">
-                            <span style="background: #e3f2fd; color: #1976d2; padding: 5px 15px; border-radius: 15px; font-size: 14px;">HTML/CSS</span>
-                            <span style="background: #fff9c4; color: #f57f17; padding: 5px 15px; border-radius: 15px; font-size: 14px;">JavaScript</span>
+                            <span style="background: #e3f2fd; color: #1976d2; padding: 5px 15px; border-radius: 15px; font-size: 14px;">React</span>
+                            <span style="background: #fff9c4; color: #f57f17; padding: 5px 15px; border-radius: 15px; font-size: 14px;">Tailwind</span>
                         </div>
-                        <a href="#" style="color: #2980b9; text-decoration: none; font-weight: bold;">عرض المشروع →</a>
+                        <a href="https://github.com/AmeedSalama/portfolio-website" target="_blank" 
+                           style="display: inline-flex; align-items: center; gap: 8px; background: #34495e; color: white; padding: 10px 20px; text-decoration: none; border-radius: 8px; font-weight: bold; transition: all 0.3s ease;"
+                           onmouseover="this.style.background='#2c3e50'" onmouseout="this.style.background='#34495e'">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                            عرض على GitHub
+                        </a>
                     </div>
                 </div>
 
                 <!-- Project 4 -->
-                <div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                <div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: transform 0.3s; cursor: pointer;"
+                     onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
                     <div style="height: 220px; background: linear-gradient(135deg, #2980b9 0%, #6dd5ed 100%); display: flex; align-items: center; justify-content: center; font-size: 60px;">
                         📊
                     </div>
@@ -264,12 +289,20 @@
                             <span style="background: #e3f2fd; color: #1976d2; padding: 5px 15px; border-radius: 15px; font-size: 14px;">React</span>
                             <span style="background: #f3e5f5; color: #7b1fa2; padding: 5px 15px; border-radius: 15px; font-size: 14px;">Chart.js</span>
                         </div>
-                        <a href="#" style="color: #2980b9; text-decoration: none; font-weight: bold;">عرض المشروع →</a>
+                        <a href="https://github.com/AmeedSalama/analytics-dashboard" target="_blank" 
+                           style="display: inline-flex; align-items: center; gap: 8px; background: #2980b9; color: white; padding: 10px 20px; text-decoration: none; border-radius: 8px; font-weight: bold; transition: all 0.3s ease;"
+                           onmouseover="this.style.background='#3498db'" onmouseout="this.style.background='#2980b9'">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                            عرض على GitHub
+                        </a>
                     </div>
                 </div>
 
                 <!-- Project 5 -->
-                <div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                <div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: transform 0.3s; cursor: pointer;"
+                     onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
                     <div style="height: 220px; background: linear-gradient(135deg, #8e44ad 0%, #c0392b 100%); display: flex; align-items: center; justify-content: center; font-size: 60px;">
                         🎨
                     </div>
@@ -282,12 +315,20 @@
                             <span style="background: #e3f2fd; color: #1976d2; padding: 5px 15px; border-radius: 15px; font-size: 14px;">Canvas API</span>
                             <span style="background: #fff9c4; color: #f57f17; padding: 5px 15px; border-radius: 15px; font-size: 14px;">JavaScript</span>
                         </div>
-                        <a href="#" style="color: #8e44ad; text-decoration: none; font-weight: bold;">عرض المشروع →</a>
+                        <a href="https://github.com/AmeedSalama/design-tool" target="_blank" 
+                           style="display: inline-flex; align-items: center; gap: 8px; background: #8e44ad; color: white; padding: 10px 20px; text-decoration: none; border-radius: 8px; font-weight: bold; transition: all 0.3s ease;"
+                           onmouseover="this.style.background='#a569bd'" onmouseout="this.style.background='#8e44ad'">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                            عرض على GitHub
+                        </a>
                     </div>
                 </div>
 
                 <!-- Project 6 -->
-                <div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                <div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: transform 0.3s; cursor: pointer;"
+                     onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
                     <div style="height: 220px; background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%); display: flex; align-items: center; justify-content: center; font-size: 60px;">
                         🎵
                     </div>
@@ -300,7 +341,14 @@
                             <span style="background: #fff9c4; color: #f57f17; padding: 5px 15px; border-radius: 15px; font-size: 14px;">JavaScript</span>
                             <span style="background: #e8f5e9; color: #388e3c; padding: 5px 15px; border-radius: 15px; font-size: 14px;">Web Audio API</span>
                         </div>
-                        <a href="#" style="color: #27ae60; text-decoration: none; font-weight: bold;">عرض المشروع →</a>
+                        <a href="https://github.com/AmeedSalama/music-player" target="_blank" 
+                           style="display: inline-flex; align-items: center; gap: 8px; background: #27ae60; color: white; padding: 10px 20px; text-decoration: none; border-radius: 8px; font-weight: bold; transition: all 0.3s ease;"
+                           onmouseover="this.style.background='#2ecc71'" onmouseout="this.style.background='#27ae60'">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                            عرض على GitHub
+                        </a>
                     </div>
                 </div>
 
