@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - MyWebsite</title>
+    <title> Ameed Salama</title>
     <style>
         * {
             margin: 0;
@@ -111,10 +111,228 @@
         </div>
     </nav>
 
-    <div style="padding: 40px 20px; max-width: 1200px; margin: 0 auto;">
-        <h1>Our Portfolio</h1>
-        <p>Check out our recent projects and work.</p>
-    </div>
+    <!-- Hero Section -->
+    <section style="background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); color: white; padding: 100px 20px; text-align: center;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h1 style="font-size: 48px; margin-bottom: 20px; font-weight: bold;">معرض أعمالي</h1>
+            <p style="font-size: 22px; opacity: 0.95; max-width: 700px; margin: 0 auto;">
+                مجموعة من المشاريع التي عملت عليها باستخدام أحدث التقنيات
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Grid Section -->
+    <section style="padding: 80px 20px; background: #f8f9fa;">
+        <div style="max-width: 1300px; margin: 0 auto;">
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 35px;">
+                
+                <!-- Project 1: Slameh -->
+                <div style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;"
+                     onmouseover="this.style.transform='translateY(-15px)'; this.style.boxShadow='0 15px 40px rgba(0,0,0,0.15)'" 
+                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'">
+                    <div style="height: 250px; background: linear-gradient(135deg, #2980b9 0%, #6dd5ed 100%); display: flex; align-items: center; justify-content: center; font-size: 80px;">
+                        🌐
+                    </div>
+                    <div style="padding: 30px;">
+                        <h3 style="color: #2c3e50; margin-bottom: 15px; font-size: 26px; font-weight: bold;">Slameh</h3>
+                        <p style="color: #555; line-height: 1.7; margin-bottom: 20px; font-size: 15px;">
+                            منصة إلكترونية متكاملة تهدف لتسهيل عملية التواصل والخدمات بين المستخدمين مع واجهة عصرية وسهلة الاستخدام.
+                        </p>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+                            <span style="background: #e3f2fd; color: #1976d2; padding: 6px 14px; border-radius: 15px; font-size: 13px; font-weight: 500;">Next.js</span>
+                            <span style="background: #e8f5e9; color: #388e3c; padding: 6px 14px; border-radius: 15px; font-size: 13px; font-weight: 500;">Node.js</span>
+                            <span style="background: #f3e5f5; color: #7b1fa2; padding: 6px 14px; border-radius: 15px; font-size: 13px; font-weight: 500;">Supabase</span>
+                        </div>
+                        <a href="https://github.com/Ameed-salameh/slameh" target="_blank" 
+                           style="display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, #2980b9 0%, #6dd5ed 100%); color: white; padding: 12px 24px; text-decoration: none; border-radius: 50px; font-weight: bold; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(41,128,185,0.3);"
+                           onmouseover="this.style.boxShadow='0 6px 20px rgba(41,128,185,0.4)'; this.style.transform='translateY(-3px)'" 
+                           onmouseout="this.style.boxShadow='0 4px 15px rgba(41,128,185,0.3)'; this.style.transform='translateY(0)'">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                            عرض على GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Multi-tier Book Store -->
+                <div style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;"
+                     onmouseover="this.style.transform='translateY(-15px)'; this.style.boxShadow='0 15px 40px rgba(0,0,0,0.15)'" 
+                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'">
+                    <div style="height: 250px; background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); display: flex; align-items: center; justify-content: center; font-size: 80px;">
+                        📚
+                    </div>
+                    <div style="padding: 30px;">
+                        <h3 style="color: #2c3e50; margin-bottom: 15px; font-size: 26px; font-weight: bold;">Multi-tier Online Book Store</h3>
+                        <p style="color: #555; line-height: 1.7; margin-bottom: 20px; font-size: 15px;">
+                            متجر كتب إلكتروني متعدد الطبقات مع معمارية Microservices، يوفر تجربة تسوق متكاملة وإدارة فعالة للمخزون.
+                        </p>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+                            <span style="background: #e8f5e9; color: #2e7d32; padding: 6px 14px; border-radius: 15px; font-size: 13px; font-weight: 500;">Node.js</span>
+                            <span style="background: #e3f2fd; color: #01579b; padding: 6px 14px; border-radius: 15px; font-size: 13px; font-weight: 500;">Docker</span>
+                            <span style="background: #fff3e0; color: #ef6c00; padding: 6px 14px; border-radius: 15px; font-size: 13px; font-weight: 500;">Microservices</span>
+                        </div>
+                        <a href="https://github.com/Ameed-salameh/Multi-tier-Online-Book-Store" target="_blank" 
+                           style="display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); color: white; padding: 12px 24px; text-decoration: none; border-radius: 50px; font-weight: bold; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(44,62,80,0.3);"
+                           onmouseover="this.style.boxShadow='0 6px 20px rgba(44,62,80,0.4)'; this.style.transform='translateY(-3px)'" 
+                           onmouseout="this.style.boxShadow='0 4px 15px rgba(44,62,80,0.3)'; this.style.transform='translateY(0)'">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                            عرض على GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Tasks Management System -->
+                <div style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;"
+                     onmouseover="this.style.transform='translateY(-15px)'; this.style.boxShadow='0 15px 40px rgba(0,0,0,0.15)'" 
+                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'">
+                    <div style="height: 250px; background: linear-gradient(135deg, #16a085 0%, #1abc9c 100%); display: flex; align-items: center; justify-content: center; font-size: 80px;">
+                        ✅
+                    </div>
+                    <div style="padding: 30px;">
+                        <h3 style="color: #2c3e50; margin-bottom: 15px; font-size: 26px; font-weight: bold;">Tasks Management System</h3>
+                        <p style="color: #555; line-height: 1.7; margin-bottom: 20px; font-size: 15px;">
+                            نظام إدارة مهام احترافي يساعد على تنظيم العمل وتتبع التقدم مع واجهة بسيطة وسهلة الاستخدام.
+                        </p>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+                            <span style="background: #fff3e0; color: #f57c00; padding: 6px 14px; border-radius: 15px; font-size: 13px; font-weight: 500;">HTML/CSS</span>
+                            <span style="background: #fff9c4; color: #f57f17; padding: 6px 14px; border-radius: 15px; font-size: 13px; font-weight: 500;">JavaScript</span>
+                            <span style="background: #e8f5e9; color: #2e7d32; padding: 6px 14px; border-radius: 15px; font-size: 13px; font-weight: 500;">Local Storage</span>
+                        </div>
+                        <a href="https://github.com/Ameed-salameh/Tasks-Management-System" target="_blank" 
+                           style="display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, #16a085 0%, #1abc9c 100%); color: white; padding: 12px 24px; text-decoration: none; border-radius: 50px; font-weight: bold; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(22,160,133,0.3);"
+                           onmouseover="this.style.boxShadow='0 6px 20px rgba(22,160,133,0.4)'; this.style.transform='translateY(-3px)'" 
+                           onmouseout="this.style.boxShadow='0 4px 15px rgba(22,160,133,0.3)'; this.style.transform='translateY(0)'">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                            عرض على GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4: Tasks Management System 2 -->
+                <div style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;"
+                     onmouseover="this.style.transform='translateY(-15px)'; this.style.boxShadow='0 15px 40px rgba(0,0,0,0.15)'" 
+                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'">
+                    <div style="height: 250px; background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); display: flex; align-items: center; justify-content: center; font-size: 80px;">
+                        ✅
+                    </div>
+                    <div style="padding: 30px;">
+                        <h3 style="color: #2c3e50; margin-bottom: 15px; font-size: 26px; font-weight: bold;">Tasks Management System_2</h3>
+                        <p style="color: #555; line-height: 1.7; margin-bottom: 20px; font-size: 15px;">
+                            نسخة محسّنة من نظام إدارة المهام باستخدام React وTailwind CSS مع ميزات إضافية وتصميم أكثر حداثة.
+                        </p>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+                            <span style="background: #e3f2fd; color: #1976d2; padding: 6px 14px; border-radius: 15px; font-size: 13px; font-weight: 500;">React</span>
+                            <span style="background: #e0f2f1; color: #00796b; padding: 6px 14px; border-radius: 15px; font-size: 13px; font-weight: 500;">Tailwind CSS</span>
+                            <span style="background: #fff9c4; color: #f57f17; padding: 6px 14px; border-radius: 15px; font-size: 13px; font-weight: 500;">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/Ameed-salameh/Tasks-Management-System_2" target="_blank" 
+                           style="display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 12px 24px; text-decoration: none; border-radius: 50px; font-weight: bold; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(231,76,60,0.3);"
+                           onmouseover="this.style.boxShadow='0 6px 20px rgba(231,76,60,0.4)'; this.style.transform='translateY(-3px)'" 
+                           onmouseout="this.style.boxShadow='0 4px 15px rgba(231,76,60,0.3)'; this.style.transform='translateY(0)'">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                            عرض على GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 5: PhoneXpress -->
+                <div style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;"
+                     onmouseover="this.style.transform='translateY(-15px)'; this.style.boxShadow='0 15px 40px rgba(0,0,0,0.15)'" 
+                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'">
+                    <div style="height: 250px; background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); display: flex; align-items: center; justify-content: center; font-size: 80px;">
+                        📱
+                    </div>
+                    <div style="padding: 30px;">
+                        <h3 style="color: #2c3e50; margin-bottom: 15px; font-size: 26px; font-weight: bold;">PhoneXpress</h3>
+                        <p style="color: #555; line-height: 1.7; margin-bottom: 20px; font-size: 15px;">
+                            متجر إلكتروني متكامل لبيع الهواتف المحمولة مع واجهة مستخدم عصرية ونظام إدارة متطور للمنتجات والطلبات.
+                        </p>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+                            <span style="background: #e3f2fd; color: #1976d2; padding: 6px 14px; border-radius: 15px; font-size: 13px; font-weight: 500;">React</span>
+                            <span style="background: #e8f5e9; color: #388e3c; padding: 6px 14px; border-radius: 15px; font-size: 13px; font-weight: 500;">Node.js</span>
+                            <span style="background: #fff3e0; color: #f57c00; padding: 6px 14px; border-radius: 15px; font-size: 13px; font-weight: 500;">E-commerce</span>
+                        </div>
+                        <a href="https://github.com/Ameed-salameh/PhoneXpress" target="_blank" 
+                           style="display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); color: white; padding: 12px 24px; text-decoration: none; border-radius: 50px; font-weight: bold; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(155,89,182,0.3);"
+                           onmouseover="this.style.boxShadow='0 6px 20px rgba(155,89,182,0.4)'; this.style.transform='translateY(-3px)'" 
+                           onmouseout="this.style.boxShadow='0 4px 15px rgba(155,89,182,0.3)'; this.style.transform='translateY(0)'">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                            عرض على GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 6: Country Gate -->
+                <div style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;"
+                     onmouseover="this.style.transform='translateY(-15px)'; this.style.boxShadow='0 15px 40px rgba(0,0,0,0.15)'" 
+                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'">
+                    <div style="height: 250px; background: linear-gradient(135deg, #8e44ad 0%, #c0392b 100%); display: flex; align-items: center; justify-content: center; font-size: 80px;">
+                        🌐
+                    </div>
+                    <div style="padding: 30px;">
+                        <h3 style="color: #2c3e50; margin-bottom: 15px; font-size: 26px; font-weight: bold;">Country Gate</h3>
+                        <p style="color: #555; line-height: 1.7; margin-bottom: 20px; font-size: 15px;">
+                            موقع ويب تفاعلي يوفر معلومات شاملة عن الدول المختلفة مع قاعدة بيانات متكاملة وواجهة جذابة.
+                        </p>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+                            <span style="background: #fff9c4; color: #f57f17; padding: 6px 14px; border-radius: 15px; font-size: 13px; font-weight: 500;">JavaScript</span>
+                            <span style="background: #f3e5f5; color: #6a1b9a; padding: 6px 14px; border-radius: 15px; font-size: 13px; font-weight: 500;">PHP</span>
+                            <span style="background: #e3f2fd; color: #0277bd; padding: 6px 14px; border-radius: 15px; font-size: 13px; font-weight: 500;">MySQL</span>
+                        </div>
+                        <a href="https://github.com/Ameed-salameh/project_web" target="_blank" 
+                           style="display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, #8e44ad 0%, #c0392b 100%); color: white; padding: 12px 24px; text-decoration: none; border-radius: 50px; font-weight: bold; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(142,68,173,0.3);"
+                           onmouseover="this.style.boxShadow='0 6px 20px rgba(142,68,173,0.4)'; this.style.transform='translateY(-3px)'" 
+                           onmouseout="this.style.boxShadow='0 4px 15px rgba(142,68,173,0.3)'; this.style.transform='translateY(0)'">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                            عرض على GitHub
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section style="padding: 80px 20px; background: white; text-align: center;">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h2 style="color: #2c3e50; font-size: 38px; margin-bottom: 20px; font-weight: bold;">هل أعجبتك مشاريعي؟</h2>
+            <p style="color: #666; font-size: 20px; margin-bottom: 35px; line-height: 1.7;">
+                يمكنني مساعدتك في بناء مشروعك التالي بنفس الجودة والاحترافية
+            </p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="contact.html" 
+                   style="display: inline-block; background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white; padding: 16px 40px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 18px; transition: all 0.3s ease; box-shadow: 0 5px 20px rgba(52,152,219,0.3);"
+                   onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(52,152,219,0.4)'" 
+                   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 20px rgba(52,152,219,0.3)'">
+                    تواصل معي
+                </a>
+                <a href="about.html" 
+                   style="display: inline-block; background: white; color: #2c3e50; padding: 16px 40px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 18px; transition: all 0.3s ease; border: 2px solid #2c3e50;"
+                   onmouseover="this.style.background='#2c3e50'; this.style.color='white'" 
+                   onmouseout="this.style.background='white'; this.style.color='#2c3e50'">
+                    المزيد عني
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #2c3e50; color: white; padding: 30px 20px; text-align: center;">
+        <p>&copy; 2026 Ameed Salama. جميع الحقوق محفوظة.</p>
+    </footer>
 
 </body>
 </html>
