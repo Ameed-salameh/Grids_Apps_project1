@@ -3,314 +3,653 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ameed-salama</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .navbar {
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .nav-logo {
-            color: #fff;
-            font-size: 24px;
-            font-weight: bold;
-            text-decoration: none;
-            padding: 15px 0;
-            transition: color 0.3s ease;
-        }
-
-        .nav-logo:hover {
-            color: #3498db;
-        }
-
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 5px;
-        }
-
-        .nav-menu a {
-            color: #fff;
-            text-decoration: none;
-            padding: 15px 20px;
-            border-radius: 8px;
-            display: block;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .nav-menu a:hover {
-            background-color: rgba(52, 152, 219, 0.2);
-            color: #3498db;
-            transform: translateY(-2px);
-        }
-
-        .nav-menu a.active {
-            background-color: rgba(52, 152, 219, 0.3);
-            color: #3498db;
-            border-bottom: 3px solid #3498db;
-        }
-
-        @media screen and (max-width: 768px) {
-            .nav-container {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .nav-menu {
-                flex-direction: column;
-                width: 100%;
-                gap: 0;
-            }
-
-            .nav-menu a {
-                width: 100%;
-                padding: 12px 20px;
-                border-radius: 0;
-            }
-        }
-    </style>
+    <title>Ameed Salama - Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- ============ Navbar ============ -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">Ameed Salama</a>
+            <a href="#home" class="nav-logo">Ameed Salama</a>
             <ul class="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="album.html">Album</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#album">Album</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section style="background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); color: white; padding: 100px 20px; text-align: center;">
+    <!-- ============ Hero Section ============ -->
+    <section id="home" class="hero-section">
         <div style="max-width: 1200px; margin: 0 auto;">
-            <h1 style="font-size: 48px; margin-bottom: 20px;">Ameed Salama</h1>
-            <p style="font-size: 24px; margin-bottom: 30px;">Full Stack Developer</p>
-            <a href="#about" style="background: white; color: #2c3e50; padding: 15px 40px; text-decoration: none; border-radius: 50px; font-weight: bold; display: inline-block; transition: all 0.3s ease;">Discover More</a>
+            <h1>Ameed Salama</h1>
+            <p>Full Stack Developer</p>
+            <a href="#about" class="hero-btn">Discover More</a>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" style="padding: 80px 20px; background: #f9f9f9;">
-        <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
-            <h2 style="font-size: 36px; margin-bottom: 20px; color: #2c3e50;">About Me</h2>
-            <p style="font-size: 18px; color: #555; line-height: 1.8; max-width: 900px; margin: 0 auto; text-align: justify;">
-                Full Stack Developer with a background in Computer Engineering and hands-on experience in Node.js and Express.js, specializing in building RESTful APIs and working with databases. I have knowledge of React and Next.js, work with team spirit, and strive for growth in a professional software development environment. I focus on building effective software solutions using the latest technologies and tools.
+    <!-- ============ About Section ============ -->
+    <section id="about" class="about-section">
+        <div class="about-grid">
+            <div style="text-align: center;">
+                <img src="image/me.jpg" alt="Ameed Salama" class="about-img">
+            </div>
+            <div class="about-text">
+                <h2>Hello, I'm Ameed Salama</h2>
+                <p>
+                    Full Stack Developer with a background in Computer Engineering from An-Najah National University. I have hands-on experience in Node.js and Express.js, specializing in building RESTful APIs and working with databases.
+                </p>
+                <p>
+                    I have knowledge of React and Next.js, and I consider myself a collaborative team player who passionately strives for growth in a professional software development environment. I focus on building effective and scalable software solutions using the latest technologies and tools.
+                </p>
+                <div style="margin-top: 25px;">
+                    <a href="#contact" class="about-btn">Contact Me</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Progress Bars -->
+        <div style="max-width: 1200px; margin: 60px auto 0;">
+            <h2 class="section-title">Skills &amp; Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h4>Node.js &amp; Express</h4>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h4>React &amp; Next.js</h4>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h4>Databases</h4>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar" style="width: 88%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h4>RESTful APIs</h4>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar" style="width: 92%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h4>Git &amp; Docker</h4>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar" style="width: 87%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h4>JavaScript</h4>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar" style="width: 93%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ Services Section ============ -->
+    <section id="services" class="services-section">
+        <h2 class="section-title">Services I Offer</h2>
+        <p class="section-subtitle">Comprehensive software development solutions to turn your ideas into digital reality</p>
+
+        <div class="services-grid">
+            <!-- Service 1 -->
+            <div class="service-card border-blue">
+                <div class="service-icon" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);">💻</div>
+                <h3>Full Stack Web Development</h3>
+                <p>Build complete web applications from A to Z using cutting-edge technologies like React, Node.js, and Next.js with robust and secure databases.</p>
+                <div>
+                    <span class="tech-tag" style="background: #e3f2fd; color: #1976d2;">React</span>
+                    <span class="tech-tag" style="background: #e8f5e9; color: #388e3c;">Node.js</span>
+                    <span class="tech-tag" style="background: #f3e5f5; color: #7b1fa2;">Next.js</span>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card border-green">
+                <div class="service-icon" style="background: linear-gradient(135deg, #16a085 0%, #1abc9c 100%);">🎨</div>
+                <h3>Frontend Development</h3>
+                <p>Design and develop attractive and user-friendly interfaces with modern technologies like React, delivering exceptional user experience with responsive design.</p>
+                <div>
+                    <span class="tech-tag" style="background: #fff3e0; color: #f57c00;">HTML/CSS</span>
+                    <span class="tech-tag" style="background: #e0f2f1; color: #00796b;">Tailwind</span>
+                    <span class="tech-tag" style="background: #f3e5f5; color: #6a1b9a;">Bootstrap</span>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card border-red">
+                <div class="service-icon" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);">⚙️</div>
+                <h3>Backend &amp; API Development</h3>
+                <p>Build robust and secure backend systems with integrated RESTful APIs using Node.js and Express.js, with high security and performance standards.</p>
+                <div>
+                    <span class="tech-tag" style="background: #e8f5e9; color: #2e7d32;">Express.js</span>
+                    <span class="tech-tag" style="background: #fce4ec; color: #c2185b;">RESTful API</span>
+                    <span class="tech-tag" style="background: #fff3e0; color: #ef6c00;">Microservices</span>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-card border-purple">
+                <div class="service-icon" style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);">🗄️</div>
+                <h3>Database Management</h3>
+                <p>Design and manage efficient and secure databases using MySQL, PostgreSQL, and Supabase, with query optimization and data integrity assurance.</p>
+                <div>
+                    <span class="tech-tag" style="background: #e3f2fd; color: #0277bd;">MySQL</span>
+                    <span class="tech-tag" style="background: #e8eaf6; color: #283593;">PostgreSQL</span>
+                    <span class="tech-tag" style="background: #e8f5e9; color: #2e7d32;">Supabase</span>
+                </div>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="service-card border-orange">
+                <div class="service-icon" style="background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);">🚀</div>
+                <h3>Deployment &amp; Maintenance</h3>
+                <p>Deploy applications to various servers using Docker and Git for version management, plus regular maintenance and continuous support.</p>
+                <div>
+                    <span class="tech-tag" style="background: #e3f2fd; color: #01579b;">Docker</span>
+                    <span class="tech-tag" style="background: #ffebee; color: #c62828;">Git</span>
+                    <span class="tech-tag" style="background: #f3e5f5; color: #4a148c;">CI/CD</span>
+                </div>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="service-card border-dark">
+                <div class="service-icon" style="background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);">💡</div>
+                <h3>Technical Consulting</h3>
+                <p>Specialized technical consulting in choosing the right technologies, performance optimization, solving technical problems, and providing best practices in software development.</p>
+                <div>
+                    <span class="tech-tag" style="background: #e8f5e9; color: #1b5e20;">Architecture</span>
+                    <span class="tech-tag" style="background: #e3f2fd; color: #0d47a1;">Best Practices</span>
+                    <span class="tech-tag" style="background: #fff3e0; color: #e65100;">Code Review</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Why Choose Me -->
+        <div style="max-width: 1000px; margin: 80px auto 0; text-align: center;">
+            <h2 class="section-title">Why Choose Me?</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="icon">✅</div>
+                    <h3>High Quality</h3>
+                    <p>Clean and organized code following best practices and global standards</p>
+                </div>
+                <div class="why-card">
+                    <div class="icon">⚡</div>
+                    <h3>Fast Delivery</h3>
+                    <p>Commitment to deadlines and project delivery on time</p>
+                </div>
+                <div class="why-card">
+                    <div class="icon">🎯</div>
+                    <h3>Attention to Detail</h3>
+                    <p>Great attention to detail to ensure professional and exceptional results</p>
+                </div>
+                <div class="why-card">
+                    <div class="icon">💬</div>
+                    <h3>Continuous Communication</h3>
+                    <p>Constant communication and continuous follow-up to ensure achieving your vision</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ Portfolio Section ============ -->
+    <section id="portfolio" class="portfolio-section">
+        <h2 class="section-title">My Portfolio</h2>
+        <p class="section-subtitle">A collection of projects I've worked on using the latest technologies</p>
+
+        <div class="portfolio-grid">
+            <!-- Project 1: Slameh -->
+            <div class="project-card">
+                <div class="project-banner" style="background: linear-gradient(135deg, #2980b9 0%, #6dd5ed 100%);">🌐</div>
+                <div class="project-content">
+                    <h3>Slameh</h3>
+                    <p>A comprehensive online platform designed to facilitate communication and services between users with a modern and easy-to-use interface.</p>
+                    <div class="project-tags">
+                        <span class="tech-tag" style="background: #e3f2fd; color: #1976d2;">Next.js</span>
+                        <span class="tech-tag" style="background: #e8f5e9; color: #388e3c;">Node.js</span>
+                        <span class="tech-tag" style="background: #f3e5f5; color: #7b1fa2;">Supabase</span>
+                    </div>
+                    <a href="https://github.com/Ameed-salameh/slameh" target="_blank" class="github-btn" style="background: linear-gradient(135deg, #2980b9 0%, #6dd5ed 100%); box-shadow: 0 4px 15px rgba(41,128,185,0.3);">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2: Multi-tier Book Store -->
+            <div class="project-card">
+                <div class="project-banner" style="background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);">📚</div>
+                <div class="project-content">
+                    <h3>Multi-tier Online Book Store</h3>
+                    <p>Multi-tier online bookstore with Microservices architecture, providing a complete shopping experience and efficient inventory management.</p>
+                    <div class="project-tags">
+                        <span class="tech-tag" style="background: #e8f5e9; color: #2e7d32;">Node.js</span>
+                        <span class="tech-tag" style="background: #e3f2fd; color: #01579b;">Docker</span>
+                        <span class="tech-tag" style="background: #fff3e0; color: #ef6c00;">Microservices</span>
+                    </div>
+                    <a href="https://github.com/Ameed-salameh/Multi-tier-Online-Book-Store" target="_blank" class="github-btn" style="background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); box-shadow: 0 4px 15px rgba(44,62,80,0.3);">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 3: Tasks Management -->
+            <div class="project-card">
+                <div class="project-banner" style="background: linear-gradient(135deg, #16a085 0%, #1abc9c 100%);">✅</div>
+                <div class="project-content">
+                    <h3>Tasks Management System</h3>
+                    <p>Professional task management system that helps organize work and track progress with a simple and user-friendly interface.</p>
+                    <div class="project-tags">
+                        <span class="tech-tag" style="background: #fff3e0; color: #f57c00;">HTML/CSS</span>
+                        <span class="tech-tag" style="background: #fff9c4; color: #f57f17;">JavaScript</span>
+                        <span class="tech-tag" style="background: #e8f5e9; color: #2e7d32;">Local Storage</span>
+                    </div>
+                    <a href="https://github.com/Ameed-salameh/Tasks-Management-System" target="_blank" class="github-btn" style="background: linear-gradient(135deg, #16a085 0%, #1abc9c 100%); box-shadow: 0 4px 15px rgba(22,160,133,0.3);">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 4: Tasks Management 2 -->
+            <div class="project-card">
+                <div class="project-banner" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);">✅</div>
+                <div class="project-content">
+                    <h3>Tasks Management System_2</h3>
+                    <p>Enhanced version of the task management system using React and Tailwind CSS with additional features and a more modern design.</p>
+                    <div class="project-tags">
+                        <span class="tech-tag" style="background: #e3f2fd; color: #1976d2;">React</span>
+                        <span class="tech-tag" style="background: #e0f2f1; color: #00796b;">Tailwind CSS</span>
+                        <span class="tech-tag" style="background: #fff9c4; color: #f57f17;">JavaScript</span>
+                    </div>
+                    <a href="https://github.com/Ameed-salameh/Tasks-Management-System_2" target="_blank" class="github-btn" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); box-shadow: 0 4px 15px rgba(231,76,60,0.3);">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 5: PhoneXpress -->
+            <div class="project-card">
+                <div class="project-banner" style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);">📱</div>
+                <div class="project-content">
+                    <h3>PhoneXpress</h3>
+                    <p>A comprehensive e-commerce store for selling mobile phones with a modern user interface and an advanced management system for products and orders.</p>
+                    <div class="project-tags">
+                        <span class="tech-tag" style="background: #e3f2fd; color: #1976d2;">React</span>
+                        <span class="tech-tag" style="background: #e8f5e9; color: #388e3c;">Node.js</span>
+                        <span class="tech-tag" style="background: #fff3e0; color: #f57c00;">E-commerce</span>
+                    </div>
+                    <a href="https://github.com/Ameed-salameh/PhoneXpress" target="_blank" class="github-btn" style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); box-shadow: 0 4px 15px rgba(155,89,182,0.3);">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 6: Country Gate -->
+            <div class="project-card">
+                <div class="project-banner" style="background: linear-gradient(135deg, #8e44ad 0%, #c0392b 100%);">🌐</div>
+                <div class="project-content">
+                    <h3>Country Gate</h3>
+                    <p>An interactive website that provides comprehensive information about different countries with an integrated database and attractive interface.</p>
+                    <div class="project-tags">
+                        <span class="tech-tag" style="background: #fff9c4; color: #f57f17;">JavaScript</span>
+                        <span class="tech-tag" style="background: #f3e5f5; color: #6a1b9a;">PHP</span>
+                        <span class="tech-tag" style="background: #e3f2fd; color: #0277bd;">MySQL</span>
+                    </div>
+                    <a href="https://github.com/Ameed-salameh/project_web" target="_blank" class="github-btn" style="background: linear-gradient(135deg, #8e44ad 0%, #c0392b 100%); box-shadow: 0 4px 15px rgba(142,68,173,0.3);">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ Album Section ============ -->
+    <section id="album" class="album-section">
+        <h2 class="section-title">Certificates &amp; Achievements Album</h2>
+        <p class="section-subtitle">A collection of certificates and skills I've acquired throughout my educational and professional journey</p>
+
+        <!-- Education -->
+        <div class="education-card">
+            <div class="education-header">
+                <div class="icon">🎓</div>
+                <div>
+                    <h2>University Degree</h2>
+                    <p>Computer Engineering - An-Najah National University</p>
+                </div>
+            </div>
+            <p style="color: #555; line-height: 1.8; font-size: 16px;">
+                <strong>Major:</strong> Computer Engineering<br>
+                <strong>University:</strong> An-Najah National University
             </p>
         </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section style="padding: 80px 20px;">
-        <div style="max-width: 1200px; margin: 0 auto;">
-            <h2 style="font-size: 36px; margin-bottom: 40px; text-align: center; color: #2c3e50;">Skills</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
-                <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; border-top: 4px solid #3498db;">
-                    <h3 style="color: #2c3e50; margin-bottom: 15px;">Front-End</h3>
-                    <p style="color: #555;">React, Next.js, HTML, CSS, Tailwind CSS, Bootstrap</p>
+        <!-- Skills Grid -->
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="album-skills-grid">
+            <!-- Frontend -->
+            <div class="album-skill-card">
+                <div class="icon">🎨</div>
+                <h3>Frontend Development</h3>
+                <div class="skill-item">
+                    <div class="skill-item-header">
+                        <span>React &amp; Next.js</span>
+                        <span style="color: #3498db;">85%</span>
+                    </div>
+                    <div class="skill-progress-bg">
+                        <div class="skill-progress" style="width: 85%; background: linear-gradient(90deg, #3498db, #2ecc71);"></div>
+                    </div>
                 </div>
-                <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; border-top: 4px solid #3498db;">
-                    <h3 style="color: #2c3e50; margin-bottom: 15px;">Back-End</h3>
-                    <p style="color: #555;">Node.js, Express.js, RESTful APIs, Microservices, PHP</p>
+                <div class="skill-item">
+                    <div class="skill-item-header">
+                        <span>HTML/CSS</span>
+                        <span style="color: #3498db;">95%</span>
+                    </div>
+                    <div class="skill-progress-bg">
+                        <div class="skill-progress" style="width: 95%; background: linear-gradient(90deg, #e74c3c, #f39c12);"></div>
+                    </div>
                 </div>
-                <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; border-top: 4px solid #3498db;">
-                    <h3 style="color: #2c3e50; margin-bottom: 15px;">Databases & Tools</h3>
-                    <p style="color: #555;">MySQL, PostgreSQL, Supabase, Git, GitHub, Docker</p>
+                <div class="skill-item">
+                    <div class="skill-item-header">
+                        <span>Tailwind &amp; Bootstrap</span>
+                        <span style="color: #3498db;">88%</span>
+                    </div>
+                    <div class="skill-progress-bg">
+                        <div class="skill-progress" style="width: 88%; background: linear-gradient(90deg, #9b59b6, #3498db);"></div>
+                    </div>
                 </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="album-skill-card">
+                <div class="icon">⚙️</div>
+                <h3>Backend Development</h3>
+                <div class="skill-item">
+                    <div class="skill-item-header">
+                        <span>Node.js &amp; Express</span>
+                        <span style="color: #16a085;">90%</span>
+                    </div>
+                    <div class="skill-progress-bg">
+                        <div class="skill-progress" style="width: 90%; background: linear-gradient(90deg, #16a085, #1abc9c);"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-item-header">
+                        <span>RESTful APIs</span>
+                        <span style="color: #16a085;">92%</span>
+                    </div>
+                    <div class="skill-progress-bg">
+                        <div class="skill-progress" style="width: 92%; background: linear-gradient(90deg, #2980b9, #3498db);"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-item-header">
+                        <span>PHP</span>
+                        <span style="color: #16a085;">78%</span>
+                    </div>
+                    <div class="skill-progress-bg">
+                        <div class="skill-progress" style="width: 78%; background: linear-gradient(90deg, #8e44ad, #9b59b6);"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Database & Tools -->
+            <div class="album-skill-card">
+                <div class="icon">🗄️</div>
+                <h3>Database &amp; DevOps</h3>
+                <div class="skill-item">
+                    <div class="skill-item-header">
+                        <span>MySQL &amp; PostgreSQL</span>
+                        <span style="color: #e74c3c;">88%</span>
+                    </div>
+                    <div class="skill-progress-bg">
+                        <div class="skill-progress" style="width: 88%; background: linear-gradient(90deg, #e74c3c, #c0392b);"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-item-header">
+                        <span>Git &amp; GitHub</span>
+                        <span style="color: #e74c3c;">87%</span>
+                    </div>
+                    <div class="skill-progress-bg">
+                        <div class="skill-progress" style="width: 87%; background: linear-gradient(90deg, #2c3e50, #34495e);"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-item-header">
+                        <span>Docker</span>
+                        <span style="color: #e74c3c;">82%</span>
+                    </div>
+                    <div class="skill-progress-bg">
+                        <div class="skill-progress" style="width: 82%; background: linear-gradient(90deg, #3498db, #2980b9);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Badges -->
+        <h2 class="section-title">Top Projects</h2>
+        <div class="badges-grid">
+            <div class="badge-card" style="background: linear-gradient(135deg, #2980b9 0%, #6dd5ed 100%); box-shadow: 0 10px 30px rgba(41,128,185,0.3);">
+                <div class="icon">🌐</div>
+                <h3>Slameh Platform</h3>
+                <p>Next.js, Node.js, Supabase</p>
+            </div>
+            <div class="badge-card" style="background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); box-shadow: 0 10px 30px rgba(44,62,80,0.3);">
+                <div class="icon">📚</div>
+                <h3>Multi-tier Book Store</h3>
+                <p>Microservices, Docker</p>
+            </div>
+            <div class="badge-card" style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); box-shadow: 0 10px 30px rgba(155,89,182,0.3);">
+                <div class="icon">📱</div>
+                <h3>PhoneXpress</h3>
+                <p>E-commerce Platform</p>
+            </div>
+            <div class="badge-card" style="background: linear-gradient(135deg, #16a085 0%, #1abc9c 100%); box-shadow: 0 10px 30px rgba(22,160,133,0.3);">
+                <div class="icon">✅</div>
+                <h3>Tasks Management</h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="badge-card" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); box-shadow: 0 10px 30px rgba(231,76,60,0.3);">
+                <div class="icon">✅</div>
+                <h3>Tasks System v2</h3>
+                <p>React, Tailwind CSS</p>
+            </div>
+            <div class="badge-card" style="background: linear-gradient(135deg, #8e44ad 0%, #c0392b 100%); box-shadow: 0 10px 30px rgba(142,68,173,0.3);">
+                <div class="icon">🌐</div>
+                <h3>Country Gate</h3>
+                <p>PHP, MySQL, JavaScript</p>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section style="padding: 80px 20px; background: #f9f9f9;">
-        <div style="max-width: 1200px; margin: 0 auto;">
-            <h2 style="font-size: 36px; margin-bottom: 40px; text-align: center; color: #2c3e50;">Projects</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-                <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease; cursor: pointer;"
-                     onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
-                    <div style="height: 200px; background: linear-gradient(135deg, #8e44ad 0%, #c0392b 100%); display: flex; align-items: center; justify-content: center; font-size: 60px;">
-                        🏙️
-                    </div>
-                    <div style="padding: 20px;">
-                        <h3 style="color: #2c3e50; margin-bottom: 10px;">Slameh</h3>
-                        <p style="color: #555; margin-bottom: 15px;">Web platform using Next.js and Node.js with RESTful APIs and Supabase database</p>
-                        <a href="https://github.com/XbetaApps/balad-gate" target="_blank"
-                           style="display: inline-flex; align-items: center; gap: 5px; background: #8e44ad; color: white; padding: 8px 16px; text-decoration: none; border-radius: 6px; font-size: 14px; transition: all 0.3s ease;"
-                           onmouseover="this.style.background='#a569bd'" onmouseout="this.style.background='#8e44ad'">
-                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                            </svg>
-                            GitHub
-                        </a>
-                    </div>
-                </div>
-                <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease; cursor: pointer;"
-                     onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
-                    <div style="height: 200px; background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); display: flex; align-items: center; justify-content: center; font-size: 60px;">
-                        📚
-                    </div>
-                    <div style="padding: 20px;">
-                        <h3 style="color: #2c3e50; margin-bottom: 10px;">Online Book Store</h3>
-                        <p style="color: #555; margin-bottom: 15px;">Distributed bookstore using Node.js Microservices with Docker</p>
-                        <a href="https://github.com/Ameed-salameh/project_Distributed-and-Operating-Systems_part1" target="_blank"
-                           style="display: inline-flex; align-items: center; gap: 5px; background: #2c3e50; color: white; padding: 8px 16px; text-decoration: none; border-radius: 6px; font-size: 14px; transition: all 0.3s ease;"
-                           onmouseover="this.style.background='#3498db'" onmouseout="this.style.background='#2c3e50'">
-                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                            </svg>
-                            GitHub
-                        </a>
-                    </div>
-                </div>
-                <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease; cursor: pointer;"
-                     onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
-                    <div style="height: 200px; background: linear-gradient(135deg, #16a085 0%, #1abc9c 100%); display: flex; align-items: center; justify-content: center; font-size: 60px;">
-                        ✅
-                    </div>
-                    <div style="padding: 20px;">
-                        <h3 style="color: #2c3e50; margin-bottom: 10px;">Tasks Management</h3>
-                        <p style="color: #555; margin-bottom: 15px;">Task management system using React and Tailwind CSS with Local Storage</p>
-                        <a href="https://github.com/Ameed-salameh/React_web_part2" target="_blank"
-                           style="display: inline-flex; align-items: center; gap: 5px; background: #16a085; color: white; padding: 8px 16px; text-decoration: none; border-radius: 6px; font-size: 14px; transition: all 0.3s ease;"
-                           onmouseover="this.style.background='#1abc9c'" onmouseout="this.style.background='#16a085'">
-                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                            </svg>
-                            GitHub
-                        </a>
-                    </div>
-                </div>
+    <!-- ============ Contact Section ============ -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">Welcome! You can reach me through the following channels</p>
+
+        <div class="contact-cards">
+            <!-- Email -->
+            <div class="contact-card">
+                <div class="contact-icon" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);">✉️</div>
+                <h3>Email</h3>
+                <a href="mailto:ameed.salame123@gmail.com" style="color: #3498db;">ameed.salame123@gmail.com</a>
             </div>
-            <div style="text-align: center; margin-top: 40px;">
-                <a href="about.html#projects" style="background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); color: white; padding: 15px 40px; text-decoration: none; border-radius: 50px; font-weight: bold; display: inline-block; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
-                    View All Projects
+            <!-- Phone -->
+            <div class="contact-card">
+                <div class="contact-icon" style="background: linear-gradient(135deg, #16a085 0%, #1abc9c 100%);">📞</div>
+                <h3>Phone Number</h3>
+                <a href="tel:+970595693849" style="color: #16a085; font-weight: 500; direction: ltr;">0595693849</a>
+            </div>
+            <!-- Location -->
+            <div class="contact-card">
+                <div class="contact-icon" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);">📍</div>
+                <h3>Location</h3>
+                <p style="color: #555; font-size: 16px; margin: 0;">Salfit, Palestine</p>
+            </div>
+        </div>
+
+        <!-- Social Media -->
+        <div class="social-section">
+            <h2>Connect with me on social media</h2>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ameed-salama" target="_blank" class="social-btn linkedin">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    LinkedIn
+                </a>
+                <a href="https://www.facebook.com/ameed.abu.safiah.2025/" target="_blank" class="social-btn facebook">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                    Facebook
+                </a>
+                <a href="https://github.com/Ameed-salameh" target="_blank" class="social-btn github">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    GitHub
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section style="padding: 80px 20px;">
-        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-            <h2 style="font-size: 36px; margin-bottom: 20px; color: #2c3e50;">Contact Me</h2>
-            <p style="font-size: 18px; color: #555; margin-bottom: 30px;">Have a project? Let's talk!</p>
-            <a href="contact.html" style="background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); color: white; padding: 15px 40px; text-decoration: none; border-radius: 50px; font-weight: bold; display: inline-block; transition: all 0.3s ease;">Contact Me Now</a>
+    <!-- ============ CTA Section ============ -->
+    <section class="cta-section">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h2>Have a project in mind?</h2>
+            <p>Let's turn your idea into reality! Contact me now and start your project</p>
+            <a href="#contact" class="cta-btn">Contact Me Now</a>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer style="background: linear-gradient(135deg, #1a252f 0%, #2c3e50 100%); color: white; padding: 60px 20px 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-        <div style="max-width: 1200px; margin: 0 auto;">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px;">
-                
-                <!-- About Section -->
-                <div>
-                    <h3 style="color: #3498db; margin-bottom: 20px; font-size: 20px; font-weight: bold;">About Ameed Salama</h3>
-                    <p style="color: #bdc3c7; line-height: 1.8; font-size: 14px;">
-                        Full Stack Developer specializing in building modern web applications using the latest technologies. I focus on delivering effective and innovative software solutions.
-                    </p>
-                </div>
-
-                <!-- Quick Links -->
-                <div>
-                    <h3 style="color: #3498db; margin-bottom: 20px; font-size: 20px; font-weight: bold;">Quick Links</h3>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: 12px;"><a href="index.html" style="color: #bdc3c7; text-decoration: none; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.color='#3498db'; this.style.transform='translateX(-5px)'" onmouseout="this.style.color='#bdc3c7'; this.style.transform='translateX(0)'">🏠 Home</a></li>
-                        <li style="margin-bottom: 12px;"><a href="about.html" style="color: #bdc3c7; text-decoration: none; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.color='#3498db'; this.style.transform='translateX(-5px)'" onmouseout="this.style.color='#bdc3c7'; this.style.transform='translateX(0)'">👤 About</a></li>
-                        <li style="margin-bottom: 12px;"><a href="services.html" style="color: #bdc3c7; text-decoration: none; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.color='#3498db'; this.style.transform='translateX(-5px)'" onmouseout="this.style.color='#bdc3c7'; this.style.transform='translateX(0)'">💼 Services</a></li>
-                        <li style="margin-bottom: 12px;"><a href="portfolio.html" style="color: #bdc3c7; text-decoration: none; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.color='#3498db'; this.style.transform='translateX(-5px)'" onmouseout="this.style.color='#bdc3c7'; this.style.transform='translateX(0)'">📂 Portfolio</a></li>
-                        <li style="margin-bottom: 12px;"><a href="album.html" style="color: #bdc3c7; text-decoration: none; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.color='#3498db'; this.style.transform='translateX(-5px)'" onmouseout="this.style.color='#bdc3c7'; this.style.transform='translateX(0)'">🖼️ Album</a></li>
-                        <li style="margin-bottom: 12px;"><a href="contact.html" style="color: #bdc3c7; text-decoration: none; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.color='#3498db'; this.style.transform='translateX(-5px)'" onmouseout="this.style.color='#bdc3c7'; this.style.transform='translateX(0)'">📧 Contact</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact Info -->
-                <div>
-                    <h3 style="color: #3498db; margin-bottom: 20px; font-size: 20px; font-weight: bold;">Contact Information</h3>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: 15px; color: #bdc3c7; font-size: 14px; display: flex; align-items: center; gap: 10px;">
-                            <span style="font-size: 18px;">📧</span>
-                            <a href="mailto:ameed.salame123@gmail.com" style="color: #bdc3c7; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#3498db'" onmouseout="this.style.color='#bdc3c7'">ameed.salame123@gmail.com</a>
-                        </li>
-                        <li style="margin-bottom: 15px; color: #bdc3c7; font-size: 14px; display: flex; align-items: center; gap: 10px;">
-                            <span style="font-size: 18px;">📱</span>
-                            <span>0595693849</span>
-                        </li>
-                        <li style="margin-bottom: 15px; color: #bdc3c7; font-size: 14px; display: flex; align-items: center; gap: 10px;">
-                            <span style="font-size: 18px;">📍</span>
-                            <span>Salfit, Palestine</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Social Media -->
-                <div>
-                    <h3 style="color: #3498db; margin-bottom: 20px; font-size: 20px; font-weight: bold;">Follow Me</h3>
-                    <div style="display: flex; gap: 15px; flex-wrap: wrap;">
-                        <a href="https://www.facebook.com/ameed.abu.safiah.2025/" target="_blank" 
-                           style="width: 45px; height: 45px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s ease; backdrop-filter: blur(10px);"
-                           onmouseover="this.style.background='#1877f2'; this.style.transform='translateY(-5px)'; this.style.boxShadow='0 5px 15px rgba(24,119,242,0.4)'" 
-                           onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">
-                            <svg width="24" height="24" fill="white" viewBox="0 0 16 16">
-                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                            </svg>
-                        </a>
-                        <a href="https://www.linkedin.com/in/ameed-salama" target="_blank" 
-                           style="width: 45px; height: 45px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s ease; backdrop-filter: blur(10px);"
-                           onmouseover="this.style.background='#0077b5'; this.style.transform='translateY(-5px)'; this.style.boxShadow='0 5px 15px rgba(0,119,181,0.4)'" 
-                           onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">
-                            <svg width="24" height="24" fill="white" viewBox="0 0 16 16">
-                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+    <!-- ============ Footer ============ -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <!-- About -->
+            <div>
+                <h3>About Ameed Salama</h3>
+                <p>Full Stack Developer specialized in building modern web applications using the latest technologies. I focus on delivering efficient and innovative software solutions.</p>
             </div>
 
-            <!-- Divider -->
-            <div style="border-top: 1px solid rgba(255,255,255,0.1); margin: 30px 0;"></div>
+            <!-- Quick Links -->
+            <div>
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">🏠 Home</a></li>
+                    <li><a href="#about">👤 About</a></li>
+                    <li><a href="#services">💼 Services</a></li>
+                    <li><a href="#portfolio">📂 Portfolio</a></li>
+                    <li><a href="#album">🖼️ Album</a></li>
+                    <li><a href="#contact">📧 Contact</a></li>
+                </ul>
+            </div>
 
-            <!-- Bottom Section -->
-            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
-                <p style="color: #95a5a6; font-size: 14px; margin: 0;">
-                    &copy; 2026 <span style="color: #3498db; font-weight: bold;">Ameed Salama</span> .جميع الحقوق محفوظة
-                </p>
-                <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-                    <a href="#" style="color: #95a5a6; text-decoration: none; font-size: 14px; transition: color 0.3s;" onmouseover="this.style.color='#3498db'" onmouseout="this.style.color='#95a5a6'">Privacy Policy</a>
-                    <a href="#" style="color: #95a5a6; text-decoration: none; font-size: 14px; transition: color 0.3s;" onmouseover="this.style.color='#3498db'" onmouseout="this.style.color='#95a5a6'">Terms of Use</a>
-                    <a href="#" style="color: #95a5a6; text-decoration: none; font-size: 14px; transition: color 0.3s;" onmouseover="this.style.color='#3498db'" onmouseout="this.style.color='#95a5a6'">Sitemap</a>
+            <!-- Contact Info -->
+            <div>
+                <h3>Contact Information</h3>
+                <ul class="footer-contact">
+                    <li>
+                        <span style="font-size: 18px;">📧</span>
+                        <a href="mailto:ameed.salame123@gmail.com">ameed.salame123@gmail.com</a>
+                    </li>
+                    <li>
+                        <span style="font-size: 18px;">📱</span>
+                        <span>0595693849</span>
+                    </li>
+                    <li>
+                        <span style="font-size: 18px;">📍</span>
+                        <span>Salfit, Palestine</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div>
+                <h3>Follow Me</h3>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/ameed.abu.safiah.2025/" target="_blank" class="fb">
+                        <svg width="24" height="24" fill="white" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ameed-salama" target="_blank" class="li">
+                        <svg width="24" height="24" fill="white" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 <span style="color: #3498db; font-weight: bold;">Ameed Salama</span> .جميع الحقوق محفوظة</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
     </footer>
+
+    <!-- ============ Scroll Spy Script ============ -->
+    <script>
+        // Scroll Spy - auto highlight active nav link based on scroll position
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-menu a');
+
+        function updateActiveNav() {
+            const scrollPos = window.scrollY + 100;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+
+                if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + sectionId) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNav);
+        window.addEventListener('load', updateActiveNav);
+    </script>
 
 </body>
 </html>
