@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Return Policy - MyWebsite</title>
+    <title>Services - Ameed Salama</title>
     <style>
         * {
             margin: 0;
@@ -101,7 +101,7 @@
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="album.html">Album</a></li>
                 <li><a href="blog.html">Blog</a></li>
@@ -111,10 +111,197 @@
         </div>
     </nav>
 
-    <div style="padding: 40px 20px; max-width: 1200px; margin: 0 auto;">
-        <h1>Return Policy</h1>
-        <p>Learn about our return and refund policy.</p>
-    </div>
+    <!-- Hero Section -->
+    <section style="background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); color: white; padding: 100px 20px; text-align: center;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h1 style="font-size: 48px; margin-bottom: 20px; font-weight: bold;">الخدمات التي أقدمها</h1>
+            <p style="font-size: 22px; opacity: 0.95; max-width: 700px; margin: 0 auto;">
+                حلول تطوير برمجية متكاملة لتحويل أفكارك إلى واقع رقمي
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section style="padding: 80px 20px; background: #f8f9fa;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 35px;">
+                
+                <!-- Service 1: Full Stack Development -->
+                <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; border-top: 5px solid #3498db;"
+                     onmouseover="this.style.transform='translateY(-15px)'; this.style.boxShadow='0 15px 40px rgba(0,0,0,0.15)'" 
+                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; font-size: 40px;">
+                        💻
+                    </div>
+                    <h3 style="color: #2c3e50; font-size: 26px; margin-bottom: 15px; font-weight: bold;">تطوير تطبيقات الويب Full Stack</h3>
+                    <p style="color: #555; line-height: 1.8; font-size: 16px; margin-bottom: 20px;">
+                        تطوير تطبيقات ويب متكاملة من الألف إلى الياء باستخدام أحدث التقنيات مثل React و Node.js و Next.js مع قواعد بيانات قوية وآمنة.
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span style="background: #e3f2fd; color: #1976d2; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 500;">React</span>
+                        <span style="background: #e8f5e9; color: #388e3c; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 500;">Node.js</span>
+                        <span style="background: #f3e5f5; color: #7b1fa2; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 500;">Next.js</span>
+                    </div>
+                </div>
+
+                <!-- Service 2: Frontend Development -->
+                <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; border-top: 5px solid #16a085;"
+                     onmouseover="this.style.transform='translateY(-15px)'; this.style.boxShadow='0 15px 40px rgba(0,0,0,0.15)'" 
+                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #16a085 0%, #1abc9c 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; font-size: 40px;">
+                        🎨
+                    </div>
+                    <h3 style="color: #2c3e50; font-size: 26px; margin-bottom: 15px; font-weight: bold;">تطوير واجهات المستخدم</h3>
+                    <p style="color: #555; line-height: 1.8; font-size: 16px; margin-bottom: 20px;">
+                        تصميم وتطوير واجهات مستخدم جذابة وسهلة الاستخدام بتقنيات حديثة مثل React، مع تجربة مستخدم متميزة وتصميم متجاوب (Responsive).
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span style="background: #fff3e0; color: #f57c00; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 500;">HTML/CSS</span>
+                        <span style="background: #e0f2f1; color: #00796b; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 500;">Tailwind</span>
+                        <span style="background: #f3e5f5; color: #6a1b9a; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 500;">Bootstrap</span>
+                    </div>
+                </div>
+
+                <!-- Service 3: Backend Development -->
+                <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; border-top: 5px solid #e74c3c;"
+                     onmouseover="this.style.transform='translateY(-15px)'; this.style.boxShadow='0 15px 40px rgba(0,0,0,0.15)'" 
+                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; font-size: 40px;">
+                        ⚙️
+                    </div>
+                    <h3 style="color: #2c3e50; font-size: 26px; margin-bottom: 15px; font-weight: bold;">تطوير Backend & APIs</h3>
+                    <p style="color: #555; line-height: 1.8; font-size: 16px; margin-bottom: 20px;">
+                        بناء أنظمة خلفية قوية وآمنة مع RESTful APIs متكاملة باستخدام Node.js و Express.js، مع معايير أمان وأداء عالية.
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span style="background: #e8f5e9; color: #2e7d32; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 500;">Express.js</span>
+                        <span style="background: #fce4ec; color: #c2185b; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 500;">RESTful API</span>
+                        <span style="background: #fff3e0; color: #ef6c00; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 500;">Microservices</span>
+                    </div>
+                </div>
+
+                <!-- Service 4: Database Management -->
+                <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; border-top: 5px solid #9b59b6;"
+                     onmouseover="this.style.transform='translateY(-15px)'; this.style.boxShadow='0 15px 40px rgba(0,0,0,0.15)'" 
+                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; font-size: 40px;">
+                        🗄️
+                    </div>
+                    <h3 style="color: #2c3e50; font-size: 26px; margin-bottom: 15px; font-weight: bold;">إدارة قواعد البيانات</h3>
+                    <p style="color: #555; line-height: 1.8; font-size: 16px; margin-bottom: 20px;">
+                        تصميم وإدارة قواعد بيانات فعالة وآمنة باستخدام MySQL و PostgreSQL و Supabase، مع تحسين الاستعلامات وضمان سلامة البيانات.
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span style="background: #e3f2fd; color: #0277bd; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 500;">MySQL</span>
+                        <span style="background: #e8eaf6; color: #283593; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 500;">PostgreSQL</span>
+                        <span style="background: #e8f5e9; color: #2e7d32; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 500;">Supabase</span>
+                    </div>
+                </div>
+
+                <!-- Service 5: DevOps & Deployment -->
+                <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; border-top: 5px solid #f39c12;"
+                     onmouseover="this.style.transform='translateY(-15px)'; this.style.boxShadow='0 15px 40px rgba(0,0,0,0.15)'" 
+                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; font-size: 40px;">
+                        🚀
+                    </div>
+                    <h3 style="color: #2c3e50; font-size: 26px; margin-bottom: 15px; font-weight: bold;">النشر والصيانة</h3>
+                    <p style="color: #555; line-height: 1.8; font-size: 16px; margin-bottom: 20px;">
+                        نشر التطبيقات على الخوادم المختلفة مع استخدام Docker و Git لإدارة الإصدارات، بالإضافة إلى الصيانة الدورية والدعم المستمر.
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span style="background: #e3f2fd; color: #01579b; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 500;">Docker</span>
+                        <span style="background: #ffebee; color: #c62828; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 500;">Git</span>
+                        <span style="background: #f3e5f5; color: #4a148c; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 500;">CI/CD</span>
+                    </div>
+                </div>
+
+                <!-- Service 6: Technical Consulting -->
+                <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; border-top: 5px solid #34495e;"
+                     onmouseover="this.style.transform='translateY(-15px)'; this.style.boxShadow='0 15px 40px rgba(0,0,0,0.15)'" 
+                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; font-size: 40px;">
+                        💡
+                    </div>
+                    <h3 style="color: #2c3e50; font-size: 26px; margin-bottom: 15px; font-weight: bold;">استشارات تقنية</h3>
+                    <p style="color: #555; line-height: 1.8; font-size: 16px; margin-bottom: 20px;">
+                        استشارات تقنية متخصصة في اختيار التقنيات المناسبة، تحسين الأداء، حل المشاكل التقنية، وتقديم أفضل الممارسات في تطوير البرمجيات.
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span style="background: #e8f5e9; color: #1b5e20; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 500;">Architecture</span>
+                        <span style="background: #e3f2fd; color: #0d47a1; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 500;">Best Practices</span>
+                        <span style="background: #fff3e0; color: #e65100; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 500;">Code Review</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Me Section -->
+    <section style="padding: 80px 20px; background: white;">
+        <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
+            <h2 style="color: #2c3e50; font-size: 38px; margin-bottom: 50px; font-weight: bold;">لماذا تختارني؟</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px;">
+                
+                <div style="padding: 30px;">
+                    <div style="font-size: 50px; margin-bottom: 20px;">✅</div>
+                    <h3 style="color: #2c3e50; font-size: 22px; margin-bottom: 15px;">جودة عالية</h3>
+                    <p style="color: #666; line-height: 1.7;">
+                        كود نظيف ومنظم يتبع أفضل الممارسات والمعايير العالمية
+                    </p>
+                </div>
+
+                <div style="padding: 30px;">
+                    <div style="font-size: 50px; margin-bottom: 20px;">⚡</div>
+                    <h3 style="color: #2c3e50; font-size: 22px; margin-bottom: 15px;">سرعة في التنفيذ</h3>
+                    <p style="color: #666; line-height: 1.7;">
+                        التزام بالمواعيد وتسليم المشاريع في الوقت المحدد
+                    </p>
+                </div>
+
+                <div style="padding: 30px;">
+                    <div style="font-size: 50px; margin-bottom: 20px;">🎯</div>
+                    <h3 style="color: #2c3e50; font-size: 22px; margin-bottom: 15px;">تركيز على التفاصيل</h3>
+                    <p style="color: #666; line-height: 1.7;">
+                        اهتمام كبير بالتفاصيل لضمان نتائج احترافية ومتميزة
+                    </p>
+                </div>
+
+                <div style="padding: 30px;">
+                    <div style="font-size: 50px; margin-bottom: 20px;">💬</div>
+                    <h3 style="color: #2c3e50; font-size: 22px; margin-bottom: 15px;">تواصل مستمر</h3>
+                    <p style="color: #666; line-height: 1.7;">
+                        تواصل دائم ومتابعة مستمرة لضمان تحقيق رؤيتك
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section style="padding: 80px 20px; background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); text-align: center;">
+        <div style="max-width: 800px; margin: 0 auto; color: white;">
+            <h2 style="font-size: 40px; margin-bottom: 20px; font-weight: bold;">هل لديك مشروع في ذهنك؟</h2>
+            <p style="font-size: 20px; margin-bottom: 35px; opacity: 0.95;">
+                دعنا نحول فكرتك إلى واقع! تواصل معي الآن وابدأ مشروعك
+            </p>
+            <a href="contact.html" 
+               style="display: inline-block; background: white; color: #2c3e50; padding: 18px 45px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 18px; transition: all 0.3s ease; box-shadow: 0 5px 20px rgba(0,0,0,0.2);"
+               onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.3)'" 
+               onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 20px rgba(0,0,0,0.2)'">
+                تواصل معي الآن
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #2c3e50; color: white; padding: 30px 20px; text-align: center;">
+        <p>&copy; 2026 Ameed Salama. جميع الحقوق محفوظة.</p>
+    </footer>
 
 </body>
 </html>
