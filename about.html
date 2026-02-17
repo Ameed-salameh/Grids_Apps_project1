@@ -39,6 +39,11 @@
             font-weight: bold;
             text-decoration: none;
             padding: 15px 0;
+            transition: color 0.3s ease;
+        }
+
+        .nav-logo:hover {
+            color: #3498db;
         }
 
         .nav-menu {
@@ -57,13 +62,13 @@
         }
 
         .nav-menu a:hover {
-            background-color: #555;
-            color: #ffd700;
+            background-color: #2c3e50;
+            color: #3498db;
         }
 
         .nav-menu a.active {
-            background-color: #555;
-            color: #ffd700;
+            background-color: #2c3e50;
+            color: #3498db;
         }
 
         @media screen and (max-width: 768px) {
@@ -89,7 +94,7 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">MyWebsite</a>
+            <a href="index.html" class="nav-logo">Ameed Salama</a>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html" class="active">About</a></li>
@@ -105,10 +110,253 @@
         </div>
     </nav>
 
-    <div style="padding: 40px 20px; max-width: 1200px; margin: 0 auto;">
-        <h1>About Us</h1>
-        <p>Learn more about our company and what we do.</p>
-    </div>
+    <!-- Hero Section -->
+    <section style="background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); color: white; padding: 80px 20px; text-align: center;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h1 style="font-size: 42px; margin-bottom: 20px;">عني</h1>
+            <p style="font-size: 20px;">تعرف علي وعلى أعمالي</p>
+        </div>
+    </section>
+
+    <!-- Personal Info Section -->
+    <section style="padding: 80px 20px;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 50px; align-items: center;">
+                <div style="text-align: center;">
+                    <div style="width: 250px; height: 250px; border-radius: 50%; background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); margin: 0 auto; display: flex; align-items: center; justify-content: center; font-size: 80px; color: white;">
+                        👨‍💻
+                    </div>
+                </div>
+                <div>
+                    <h2 style="font-size: 36px; margin-bottom: 20px; color: #2c3e50;">مرحباً، أنا عميد سلامة</h2>
+                    <p style="font-size: 18px; color: #555; line-height: 1.8; margin-bottom: 20px; text-align: justify; direction: rtl;">
+                        أنا مطوّر Full Stack متخصص في بناء تطبيقات ويب حديثة وقابلة للتوسع باستخدام أحدث التقنيات. أمتلك خبرة قوية في تطوير الواجهات الأمامية باستخدام React وNext.js لإنشاء واجهات تفاعلية وسريعة.
+                    </p>
+                    <p style="font-size: 18px; color: #555; line-height: 1.8; margin-bottom: 20px; text-align: justify; direction: rtl;">
+                        كما أمتلك خبرة في تطوير أنظمة Back-End قوية باستخدام Node.js وASP.NET لبناء APIs آمنة وفعالة. أركز على كتابة كود نظيف ومنظم، وتحسين الأداء، وتقديم حلول برمجية متكاملة توفر تجربة مستخدم ممتازة وتلبي احتياجات الأعمال بكفاءة واحترافية.
+                    </p>
+                    <div style="display: flex; gap: 15px; margin-top: 25px;">
+                        <a href="#" style="background: #3498db; color: white; padding: 12px 30px; text-decoration: none; border-radius: 25px; transition: all 0.3s ease;">تحميل السيرة الذاتية</a>
+                        <a href="contact.html" style="border: 2px solid #3498db; color: #2c3e50; padding: 12px 30px; text-decoration: none; border-radius: 25px; transition: all 0.3s ease;">تواصل معي</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section style="padding: 80px 20px; background: #f9f9f9;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="font-size: 36px; margin-bottom: 40px; text-align: center; color: #2c3e50;">المهارات والتقنيات</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); text-align: center;">
+                    <h4 style="color: #3498db; margin-bottom: 10px; font-size: 18px;">React & Next.js</h4>
+                    <div style="background: #e0e0e0; height: 10px; border-radius: 5px; overflow: hidden;">
+                        <div style="background: linear-gradient(90deg, #2c3e50, #3498db); height: 100%; width: 90%;"></div>
+                    </div>
+                </div>
+                <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); text-align: center;">
+                    <h4 style="color: #3498db; margin-bottom: 10px; font-size: 18px;">TypeScript</h4>
+                    <div style="background: #e0e0e0; height: 10px; border-radius: 5px; overflow: hidden;">
+                        <div style="background: linear-gradient(90deg, #2c3e50, #3498db); height: 100%; width: 85%;"></div>
+                    </div>
+                </div>
+                <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); text-align: center;">
+                    <h4 style="color: #3498db; margin-bottom: 10px; font-size: 18px;">Node.js</h4>
+                    <div style="background: #e0e0e0; height: 10px; border-radius: 5px; overflow: hidden;">
+                        <div style="background: linear-gradient(90deg, #2c3e50, #3498db); height: 100%; width: 88%;"></div>
+                    </div>
+                </div>
+                <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); text-align: center;">
+                    <h4 style="color: #3498db; margin-bottom: 10px; font-size: 18px;">ASP.NET</h4>
+                    <div style="background: #e0e0e0; height: 10px; border-radius: 5px; overflow: hidden;">
+                        <div style="background: linear-gradient(90deg, #2c3e50, #3498db); height: 100%; width: 82%;"></div>
+                    </div>
+                </div>
+                <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); text-align: center;">
+                    <h4 style="color: #3498db; margin-bottom: 10px; font-size: 18px;">MongoDB & SQL</h4>
+                    <div style="background: #e0e0e0; height: 10px; border-radius: 5px; overflow: hidden;">
+                        <div style="background: linear-gradient(90deg, #2c3e50, #3498db); height: 100%; width: 87%;"></div>
+                    </div>
+                </div>
+                <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); text-align: center;">
+                    <h4 style="color: #3498db; margin-bottom: 10px; font-size: 18px;">Git & GitHub</h4>
+                    <div style="background: #e0e0e0; height: 10px; border-radius: 5px; overflow: hidden;">
+                        <div style="background: linear-gradient(90deg, #2c3e50, #3498db); height: 100%; width: 92%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section style="padding: 80px 20px;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="font-size: 36px; margin-bottom: 40px; text-align: center; color: #2c3e50;">مشاريعي</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
+                
+                <!-- Project 1 -->
+                <div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: transform 0.3s;">
+                    <div style="height: 220px; background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); display: flex; align-items: center; justify-content: center; font-size: 60px;">
+                        🌐
+                    </div>
+                    <div style="padding: 25px;">
+                        <h3 style="color: #2c3e50; margin-bottom: 15px; font-size: 22px;">موقع تجارة إلكترونية</h3>
+                        <p style="color: #555; line-height: 1.6; margin-bottom: 15px;">
+                            منصة تجارة إلكترونية متكاملة مع نظام دفع آمن وواجهة استخدام سهلة وجذابة.
+                        </p>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 15px;">
+                            <span style="background: #e3f2fd; color: #1976d2; padding: 5px 15px; border-radius: 15px; font-size: 14px;">React</span>
+                            <span style="background: #e8f5e9; color: #388e3c; padding: 5px 15px; border-radius: 15px; font-size: 14px;">Node.js</span>
+                            <span style="background: #fff3e0; color: #f57c00; padding: 5px 15px; border-radius: 15px; font-size: 14px;">MongoDB</span>
+                        </div>
+                        <a href="#" style="color: #3498db; text-decoration: none; font-weight: bold;">عرض المشروع →</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                    <div style="height: 220px; background: linear-gradient(135deg, #16a085 0%, #1abc9c 100%); display: flex; align-items: center; justify-content: center; font-size: 60px;">
+                        📱
+                    </div>
+                    <div style="padding: 25px;">
+                        <h3 style="color: #2c3e50; margin-bottom: 15px; font-size: 22px;">تطبيق إدارة المهام</h3>
+                        <p style="color: #555; line-height: 1.6; margin-bottom: 15px;">
+                            تطبيق ويب لإدارة المهام والمشاريع بكفاءة مع إمكانية التعاون بين الفرق.
+                        </p>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 15px;">
+                            <span style="background: #e3f2fd; color: #1976d2; padding: 5px 15px; border-radius: 15px; font-size: 14px;">Vue.js</span>
+                            <span style="background: #fce4ec; color: #c2185b; padding: 5px 15px; border-radius: 15px; font-size: 14px;">Firebase</span>
+                        </div>
+                        <a href="#" style="color: #16a085; text-decoration: none; font-weight: bold;">عرض المشروع →</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                    <div style="height: 220px; background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); display: flex; align-items: center; justify-content: center; font-size: 60px;">
+                        💼
+                    </div>
+                    <div style="padding: 25px;">
+                        <h3 style="color: #2c3e50; margin-bottom: 15px; font-size: 22px;">موقع بورتفوليو شخصي</h3>
+                        <p style="color: #555; line-height: 1.6; margin-bottom: 15px;">
+                            موقع شخصي احترافي لعرض الأعمال والمشاريع مع تصميم متجاوب وأنيميشن جذابة.
+                        </p>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 15px;">
+                            <span style="background: #e3f2fd; color: #1976d2; padding: 5px 15px; border-radius: 15px; font-size: 14px;">HTML/CSS</span>
+                            <span style="background: #fff9c4; color: #f57f17; padding: 5px 15px; border-radius: 15px; font-size: 14px;">JavaScript</span>
+                        </div>
+                        <a href="#" style="color: #2980b9; text-decoration: none; font-weight: bold;">عرض المشروع →</a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                    <div style="height: 220px; background: linear-gradient(135deg, #2980b9 0%, #6dd5ed 100%); display: flex; align-items: center; justify-content: center; font-size: 60px;">
+                        📊
+                    </div>
+                    <div style="padding: 25px;">
+                        <h3 style="color: #2c3e50; margin-bottom: 15px; font-size: 22px;">لوحة تحكم تحليلية</h3>
+                        <p style="color: #555; line-height: 1.6; margin-bottom: 15px;">
+                            نظام متقدم لتحليل البيانات وعرض الإحصائيات برسوم بيانية تفاعلية.
+                        </p>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 15px;">
+                            <span style="background: #e3f2fd; color: #1976d2; padding: 5px 15px; border-radius: 15px; font-size: 14px;">React</span>
+                            <span style="background: #f3e5f5; color: #7b1fa2; padding: 5px 15px; border-radius: 15px; font-size: 14px;">Chart.js</span>
+                        </div>
+                        <a href="#" style="color: #2980b9; text-decoration: none; font-weight: bold;">عرض المشروع →</a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                    <div style="height: 220px; background: linear-gradient(135deg, #8e44ad 0%, #c0392b 100%); display: flex; align-items: center; justify-content: center; font-size: 60px;">
+                        🎨
+                    </div>
+                    <div style="padding: 25px;">
+                        <h3 style="color: #2c3e50; margin-bottom: 15px; font-size: 22px;">أداة تصميم أونلاين</h3>
+                        <p style="color: #555; line-height: 1.6; margin-bottom: 15px;">
+                            تطبيق ويب يسمح للمستخدمين بإنشاء تصاميم بسيطة باستخدام أدوات سهلة.
+                        </p>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 15px;">
+                            <span style="background: #e3f2fd; color: #1976d2; padding: 5px 15px; border-radius: 15px; font-size: 14px;">Canvas API</span>
+                            <span style="background: #fff9c4; color: #f57f17; padding: 5px 15px; border-radius: 15px; font-size: 14px;">JavaScript</span>
+                        </div>
+                        <a href="#" style="color: #8e44ad; text-decoration: none; font-weight: bold;">عرض المشروع →</a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                    <div style="height: 220px; background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%); display: flex; align-items: center; justify-content: center; font-size: 60px;">
+                        🎵
+                    </div>
+                    <div style="padding: 25px;">
+                        <h3 style="color: #2c3e50; margin-bottom: 15px; font-size: 22px;">مشغل موسيقى ويب</h3>
+                        <p style="color: #555; line-height: 1.6; margin-bottom: 15px;">
+                            مشغل موسيقى بواجهة جميلة وسهلة مع ميزات تنظيم قوائم التشغيل.
+                        </p>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 15px;">
+                            <span style="background: #fff9c4; color: #f57f17; padding: 5px 15px; border-radius: 15px; font-size: 14px;">JavaScript</span>
+                            <span style="background: #e8f5e9; color: #388e3c; padding: 5px 15px; border-radius: 15px; font-size: 14px;">Web Audio API</span>
+                        </div>
+                        <a href="#" style="color: #27ae60; text-decoration: none; font-weight: bold;">عرض المشروع →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section style="padding: 80px 20px; background: #f9f9f9;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="font-size: 36px; margin-bottom: 40px; text-align: center; color: #2c3e50;">الخبرة العملية</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                
+                <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); margin-bottom: 20px; border-left: 5px solid #3498db;">
+                    <h3 style="color: #2c3e50; margin-bottom: 10px;">مطور Full Stack</h3>
+                    <p style="color: #3498db; margin-bottom: 10px; font-weight: bold;">شركة التقنية الحديثة | 2024 - حالياً</p>
+                    <p style="color: #555; line-height: 1.6; direction: rtl; text-align: justify;">
+                        تطوير وصيانة تطبيقات ويب متقدمة، العمل مع فريق متعدد الجنسيات، وتحسين أداء التطبيقات.
+                    </p>
+                </div>
+
+                <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); margin-bottom: 20px; border-left: 5px solid #16a085;">
+                    <h3 style="color: #2c3e50; margin-bottom: 10px;">مطور Front-End</h3>
+                    <p style="color: #16a085; margin-bottom: 10px; font-weight: bold;">شركة الإبداع الرقمي | 2022 - 2024</p>
+                    <p style="color: #555; line-height: 1.6; direction: rtl; text-align: justify;">
+                        تصميم وتطوير واجهات مستخدم تفاعلية، تحويل التصاميم إلى كود، والعمل على تحسين تجربة المستخدم.
+                    </p>
+                </div>
+
+                <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); border-left: 5px solid #2980b9;">
+                    <h3 style="color: #2c3e50; margin-bottom: 10px;">متدرب تطوير ويب</h3>
+                    <p style="color: #2980b9; margin-bottom: 10px; font-weight: bold;">أكاديمية البرمجة | 2021 - 2022</p>
+                    <p style="color: #555; line-height: 1.6; direction: rtl; text-align: justify;">
+                        تعلم أساسيات تطوير الويب، المشاركة في مشاريع تدريبية، والعمل ضمن فريق.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section style="padding: 80px 20px; background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); color: white; text-align: center;">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h2 style="font-size: 36px; margin-bottom: 20px;">هل لديك مشروع؟</h2>
+            <p style="font-size: 18px; margin-bottom: 30px; line-height: 1.6;">
+                أنا متاح دائماً للمشاريع الجديدة والفرص المثيرة. دعنا نعمل معاً لتحويل أفكارك إلى واقع!
+            </p>
+            <a href="contact.html" style="background: white; color: #2c3e50; padding: 15px 40px; text-decoration: none; border-radius: 50px; font-weight: bold; display: inline-block; transition: all 0.3s ease;">تواصل معي الآن</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #2c3e50; color: white; padding: 30px 20px; text-align: center;">
+        <p>&copy; 2026 Ameed Salama. جميع الحقوق محفوظة.</p>
+    </footer>
 
 </body>
 </html>
