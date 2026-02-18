@@ -8,8 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body>
 
+<body>
     <!-- ============ Navbar ============ -->
     <nav class="bg-gradient-to-br from-[#2c3e50] to-[#34495e] shadow-lg fixed top-0 left-0 right-0 z-[1000]">
         <div class="flex justify-between items-center max-w-[1200px] mx-auto px-5 flex-wrap">
@@ -41,63 +41,63 @@
     </section>
 
     <!-- ============ About Section ============ -->
-    <section id="about" class="about-section">
-        <div class="about-grid">
-            <div style="text-align: center;">
-                <img src="image/me.jpg" alt="Ameed Salama" class="about-img">
+    <section id="about" class="py-20 px-5 bg-[#f9f9f9]">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-[50px] items-center max-w-[1200px] mx-auto">
+            <div class="text-center">
+                <img src="image/me.jpg" alt="Ameed Salama" class="w-[250px] h-[300px] rounded-full object-cover shadow-[0_10px_30px_rgba(0,0,0,0.3)] border-[5px] border-white block mx-auto">
             </div>
-            <div class="about-text">
-                <h2>Hello, I'm Ameed Salama</h2>
-                <p>
+            <div>
+                <h2 class="text-4xl max-md:text-2xl mb-5 text-[#2c3e50] font-bold">Hello, I'm Ameed Salama</h2>
+                <p class="text-lg max-md:text-sm text-[#555] leading-[1.8] mb-5 text-justify">
                     Full Stack Developer with a background in Computer Engineering from An-Najah National University. I have hands-on experience in Node.js and Express.js, specializing in building RESTful APIs and working with databases.
                 </p>
-                <p>
+                <p class="text-lg max-md:text-sm text-[#555] leading-[1.8] mb-5 text-justify">
                     I have knowledge of React and Next.js, and I consider myself a collaborative team player who passionately strives for growth in a professional software development environment. I focus on building effective and scalable software solutions using the latest technologies and tools.
                 </p>
-                <div style="margin-top: 25px;">
-                    <a href="#contact" class="about-btn">Contact Me</a>
+                <div class="mt-6">
+                    <a href="#contact" class="border-2 border-[#3498db] text-[#2c3e50] py-3 px-8 no-underline rounded-[25px] transition-all duration-300 inline-block hover:bg-[#3498db] hover:text-white">Contact Me</a>
                 </div>
             </div>
         </div>
 
         <!-- Skills Progress Bars -->
-        <div style="max-width: 1200px; margin: 60px auto 0;">
+        <div class="max-w-[1200px] mx-auto mt-[60px]">
             <h2 class="section-title">Skills &amp; Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h4>Node.js &amp; Express</h4>
-                    <div class="skill-bar-bg">
-                        <div class="skill-bar" style="width: 90%;"></div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-5 max-w-[1200px] mx-auto mt-10">
+                <div class="bg-white p-6 rounded-[10px] shadow-[0_3px_10px_rgba(0,0,0,0.1)] text-center">
+                    <h4 class="text-[#3498db] mb-2.5 text-lg">Node.js &amp; Express</h4>
+                    <div class="bg-[#e0e0e0] h-2.5 rounded overflow-hidden">
+                        <div class="bg-gradient-to-r from-[#2c3e50] to-[#3498db] h-full rounded" style="width: 90%;"></div>
                     </div>
                 </div>
-                <div class="skill-card">
-                    <h4>React &amp; Next.js</h4>
-                    <div class="skill-bar-bg">
-                        <div class="skill-bar" style="width: 85%;"></div>
+                <div class="bg-white p-6 rounded-[10px] shadow-[0_3px_10px_rgba(0,0,0,0.1)] text-center">
+                    <h4 class="text-[#3498db] mb-2.5 text-lg">React &amp; Next.js</h4>
+                    <div class="bg-[#e0e0e0] h-2.5 rounded overflow-hidden">
+                        <div class="bg-gradient-to-r from-[#2c3e50] to-[#3498db] h-full rounded" style="width: 85%;"></div>
                     </div>
                 </div>
-                <div class="skill-card">
-                    <h4>Databases</h4>
-                    <div class="skill-bar-bg">
-                        <div class="skill-bar" style="width: 88%;"></div>
+                <div class="bg-white p-6 rounded-[10px] shadow-[0_3px_10px_rgba(0,0,0,0.1)] text-center">
+                    <h4 class="text-[#3498db] mb-2.5 text-lg">Databases</h4>
+                    <div class="bg-[#e0e0e0] h-2.5 rounded overflow-hidden">
+                        <div class="bg-gradient-to-r from-[#2c3e50] to-[#3498db] h-full rounded" style="width: 88%;"></div>
                     </div>
                 </div>
-                <div class="skill-card">
-                    <h4>RESTful APIs</h4>
-                    <div class="skill-bar-bg">
-                        <div class="skill-bar" style="width: 92%;"></div>
+                <div class="bg-white p-6 rounded-[10px] shadow-[0_3px_10px_rgba(0,0,0,0.1)] text-center">
+                    <h4 class="text-[#3498db] mb-2.5 text-lg">RESTful APIs</h4>
+                    <div class="bg-[#e0e0e0] h-2.5 rounded overflow-hidden">
+                        <div class="bg-gradient-to-r from-[#2c3e50] to-[#3498db] h-full rounded" style="width: 92%;"></div>
                     </div>
                 </div>
-                <div class="skill-card">
-                    <h4>Git &amp; Docker</h4>
-                    <div class="skill-bar-bg">
-                        <div class="skill-bar" style="width: 87%;"></div>
+                <div class="bg-white p-6 rounded-[10px] shadow-[0_3px_10px_rgba(0,0,0,0.1)] text-center">
+                    <h4 class="text-[#3498db] mb-2.5 text-lg">Git &amp; Docker</h4>
+                    <div class="bg-[#e0e0e0] h-2.5 rounded overflow-hidden">
+                        <div class="bg-gradient-to-r from-[#2c3e50] to-[#3498db] h-full rounded" style="width: 87%;"></div>
                     </div>
                 </div>
-                <div class="skill-card">
-                    <h4>JavaScript</h4>
-                    <div class="skill-bar-bg">
-                        <div class="skill-bar" style="width: 93%;"></div>
+                <div class="bg-white p-6 rounded-[10px] shadow-[0_3px_10px_rgba(0,0,0,0.1)] text-center">
+                    <h4 class="text-[#3498db] mb-2.5 text-lg">JavaScript</h4>
+                    <div class="bg-[#e0e0e0] h-2.5 rounded overflow-hidden">
+                        <div class="bg-gradient-to-r from-[#2c3e50] to-[#3498db] h-full rounded" style="width: 93%;"></div>
                     </div>
                 </div>
             </div>
