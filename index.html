@@ -6,51 +6,14 @@
     <title>Ameed-Salama</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: {
-                            DEFAULT: '#3498db',
-                            dark: '#2980b9',
-                        },
-                        dark: {
-                            DEFAULT: '#2c3e50',
-                            light: '#34495e',
-                        },
-                        teal: {
-                            DEFAULT: '#16a085',
-                            light: '#1abc9c',
-                        },
-                        danger: {
-                            DEFAULT: '#e74c3c',
-                            dark: '#c0392b',
-                        },
-                        purple: {
-                            DEFAULT: '#9b59b6',
-                            dark: '#8e44ad',
-                        },
-                        orange: {
-                            DEFAULT: '#f39c12',
-                            dark: '#e67e22',
-                        },
-                    },
-                    fontFamily: {
-                        sans: ['Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif'],
-                    },
-                }
-            }
-        }
-    </script>
 
 </head>
 <body>
 
     <!-- ============ Navbar ============ -->
-    <nav class="bg-gradient-to-br from-dark to-dark-light shadow-lg fixed top-0 left-0 right-0 z-[1000]">
+    <nav class="bg-gradient-to-br from-[#2c3e50] to-[#34495e] shadow-lg fixed top-0 left-0 right-0 z-[1000]">
         <div class="flex justify-between items-center max-w-[1200px] mx-auto px-5 flex-wrap">
-            <a href="#home" class="text-white text-2xl font-bold no-underline py-4 transition-colors duration-300 hover:text-primary">Ameed Salama</a>
+            <a href="#home" class="text-white text-2xl font-bold no-underline py-4 transition-colors duration-300 hover:text-[#3498db]">Ameed Salama</a>
             <button class="hamburger hidden flex-col justify-center gap-[5px] bg-transparent border-none cursor-pointer p-[10px] z-[1100]" id="hamburger" aria-label="Toggle menu">
                 <span class="bar block w-7 h-[3px] bg-white rounded transition-all duration-300"></span>
                 <span class="bar block w-7 h-[3px] bg-white rounded transition-all duration-300"></span>
@@ -58,22 +21,22 @@
             </button>
             
             <ul class="nav-menu flex list-none gap-[5px]" id="navMenu">
-                <li><a href="#home" class="nav-link active text-white no-underline py-4 px-5 rounded-lg block transition-all duration-300 hover:bg-primary/20 hover:text-primary hover:-translate-y-0.5">Home</a></li>
-                <li><a href="#about" class="nav-link text-white no-underline py-4 px-5 rounded-lg block transition-all duration-300 hover:bg-primary/20 hover:text-primary hover:-translate-y-0.5">About</a></li>
-                <li><a href="#services" class="nav-link text-white no-underline py-4 px-5 rounded-lg block transition-all duration-300 hover:bg-primary/20 hover:text-primary hover:-translate-y-0.5">Services</a></li>
-                <li><a href="#portfolio" class="nav-link text-white no-underline py-4 px-5 rounded-lg block transition-all duration-300 hover:bg-primary/20 hover:text-primary hover:-translate-y-0.5">Portfolio</a></li>
-                <li><a href="#album" class="nav-link text-white no-underline py-4 px-5 rounded-lg block transition-all duration-300 hover:bg-primary/20 hover:text-primary hover:-translate-y-0.5">Album</a></li>
-                <li><a href="#contact" class="nav-link text-white no-underline py-4 px-5 rounded-lg block transition-all duration-300 hover:bg-primary/20 hover:text-primary hover:-translate-y-0.5">Contact</a></li>
+                <li><a href="#home" class="nav-link active text-white no-underline py-4 px-5 rounded-lg block transition-all duration-300 hover:bg-[#3498db]/20 hover:text-[#3498db] hover:-translate-y-0.5">Home</a></li>
+                <li><a href="#about" class="nav-link text-white no-underline py-4 px-5 rounded-lg block transition-all duration-300 hover:bg-[#3498db]/20 hover:text-[#3498db] hover:-translate-y-0.5">About</a></li>
+                <li><a href="#services" class="nav-link text-white no-underline py-4 px-5 rounded-lg block transition-all duration-300 hover:bg-[#3498db]/20 hover:text-[#3498db] hover:-translate-y-0.5">Services</a></li>
+                <li><a href="#portfolio" class="nav-link text-white no-underline py-4 px-5 rounded-lg block transition-all duration-300 hover:bg-[#3498db]/20 hover:text-[#3498db] hover:-translate-y-0.5">Portfolio</a></li>
+                <li><a href="#album" class="nav-link text-white no-underline py-4 px-5 rounded-lg block transition-all duration-300 hover:bg-[#3498db]/20 hover:text-[#3498db] hover:-translate-y-0.5">Album</a></li>
+                <li><a href="#contact" class="nav-link text-white no-underline py-4 px-5 rounded-lg block transition-all duration-300 hover:bg-[#3498db]/20 hover:text-[#3498db] hover:-translate-y-0.5">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- ============ Hero Section ============ -->
-    <section id="home" class="bg-gradient-to-br from-dark to-primary text-white pt-[140px] pb-[100px] px-5 text-center">
+    <section id="home" class="bg-gradient-to-br from-[#2c3e50] to-[#3498db] text-white pt-[140px] pb-[100px] px-5 text-center">
         <div class="max-w-[1200px] mx-auto">
-            <h1 class="text-[52px] md:text-[52px] sm:text-[32px] mb-5 font-bold">Ameed Salama</h1>
-            <p class="text-2xl mb-8 opacity-95">Full Stack Developer</p>
-            <a href="#about" class="bg-white text-dark py-4 px-10 no-underline rounded-full font-bold inline-block transition-all duration-300 shadow-lg hover:-translate-y-1 hover:shadow-xl">Discover More</a>
+            <h1 class="text-[52px] max-md:text-[32px] mb-5 font-bold">Ameed Salama</h1>
+            <p class="text-2xl max-md:text-base mb-8 opacity-95">Full Stack Developer</p>
+            <a href="#about" class="bg-white text-[#2c3e50] py-4 px-10 no-underline rounded-full font-bold inline-block transition-all duration-300 shadow-lg hover:-translate-y-1 hover:shadow-xl">Discover More</a>
         </div>
     </section>
 
