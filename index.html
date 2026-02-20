@@ -5,9 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Ameed Salama</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; scroll-padding-top: 60px; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 60px;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
         .navbar {
             background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
@@ -18,75 +29,386 @@
             right: 0;
             z-index: 1000;
         }
-        .nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        .nav-logo { color: #fff; font-size: 24px; font-weight: bold; text-decoration: none; padding: 15px 0; transition: color 0.3s ease; }
-        .nav-logo:hover { color: #3498db; }
-        .nav-menu { display: flex; list-style: none; gap: 5px; }
-        .nav-menu a { color: #fff; text-decoration: none; padding: 15px 20px; border-radius: 8px; display: block; transition: all 0.3s ease; position: relative; }
-        .nav-menu a:hover { background-color: rgba(52, 152, 219, 0.2); color: #3498db; transform: translateY(-2px); }
-        .nav-menu a.active { background-color: rgba(52, 152, 219, 0.3); color: #3498db; border-bottom: 3px solid #3498db; }
 
-        .hero-section { background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); color: white; padding: 140px 20px 100px; text-align: center; }
-        .hero-section h1 { font-size: 52px; margin-bottom: 20px; font-weight: bold; }
-        .hero-section p { font-size: 24px; margin-bottom: 30px; opacity: 0.95; }
-        .hero-btn { background: white; color: #2c3e50; padding: 15px 40px; text-decoration: none; border-radius: 50px; font-weight: bold; display: inline-block; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
-        .hero-btn:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.3); }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-        .cta-section { padding: 80px 20px; background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); text-align: center; color: white; }
-        .cta-section h2 { font-size: 40px; margin-bottom: 20px; font-weight: bold; }
-        .cta-section p { font-size: 20px; margin-bottom: 35px; opacity: 0.95; }
-        .cta-btn { display: inline-block; background: white; color: #2c3e50; padding: 16px 40px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 18px; transition: all 0.3s ease; box-shadow: 0 5px 20px rgba(0,0,0,0.2); }
-        .cta-btn:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        .nav-logo {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 15px 0;
+            transition: color 0.3s ease;
+        }
 
-        .footer { background: linear-gradient(135deg, #1a252f 0%, #2c3e50 100%); color: white; padding: 60px 20px 20px; }
-        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; max-width: 1200px; margin: 0 auto 40px; }
-        .footer h3 { color: #3498db; margin-bottom: 20px; font-size: 20px; font-weight: bold; }
-        .footer p { color: #bdc3c7; line-height: 1.8; font-size: 14px; }
-        .footer-links { list-style: none; padding: 0; }
-        .footer-links li { margin-bottom: 12px; }
-        .footer-links a { color: #bdc3c7; text-decoration: none; transition: all 0.3s ease; display: inline-block; }
-        .footer-links a:hover { color: #3498db; transform: translateX(-5px); }
-        .footer-contact { list-style: none; padding: 0; }
-        .footer-contact li { margin-bottom: 15px; color: #bdc3c7; font-size: 14px; display: flex; align-items: center; gap: 10px; }
-        .footer-contact a { color: #bdc3c7; text-decoration: none; transition: color 0.3s; }
-        .footer-contact a:hover { color: #3498db; }
-        .footer-social { display: flex; gap: 15px; flex-wrap: wrap; }
-        .footer-social a { width: 45px; height: 45px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s ease; backdrop-filter: blur(10px); }
-        .footer-social a:hover { transform: translateY(-5px); }
-        .footer-social a.fb:hover { background: #1877f2; box-shadow: 0 5px 15px rgba(24,119,242,0.4); }
-        .footer-social a.li:hover { background: #0077b5; box-shadow: 0 5px 15px rgba(0,119,181,0.4); }
-        .footer-divider { border-top: 1px solid rgba(255,255,255,0.1); margin: 30px 0; max-width: 1200px; margin-left: auto; margin-right: auto; }
-        .footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; max-width: 1200px; margin: 0 auto; }
-        .footer-bottom p { color: #95a5a6; font-size: 14px; margin: 0; }
-        .footer-bottom-links { display: flex; gap: 20px; flex-wrap: wrap; }
-        .footer-bottom-links a { color: #95a5a6; text-decoration: none; font-size: 14px; transition: color 0.3s; }
-        .footer-bottom-links a:hover { color: #3498db; }
+        .nav-logo:hover {
+            color: #3498db;
+        }
 
-        .hamburger { display: none; flex-direction: column; justify-content: center; gap: 5px; background: none; border: none; cursor: pointer; padding: 10px; z-index: 1100; }
-        .hamburger .bar { display: block; width: 28px; height: 3px; background: #fff; border-radius: 3px; transition: all 0.3s ease; }
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 5px;
+        }
+
+        .nav-menu a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 8px;
+            display: block;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-menu a:hover {
+            background-color: rgba(52, 152, 219, 0.2);
+            color: #3498db;
+            transform: translateY(-2px);
+        }
+
+        .nav-menu a.active {
+            background-color: rgba(52, 152, 219, 0.3);
+            color: #3498db;
+            border-bottom: 3px solid #3498db;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 140px 20px 100px;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 52px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .hero-section p {
+            font-size: 24px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .hero-btn {
+            background: white;
+            color: #2c3e50;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .hero-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .cta-section {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            text-align: center;
+            color: white;
+        }
+
+        .cta-section h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .cta-section p {
+            font-size: 20px;
+            margin-bottom: 35px;
+            opacity: 0.95;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: white;
+            color: #2c3e50;
+            padding: 16px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #1a252f 0%, #2c3e50 100%);
+            color: white;
+            padding: 60px 20px 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto 40px;
+        }
+
+        .footer h3 {
+            color: #3498db;
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .footer p {
+            color: #bdc3c7;
+            line-height: 1.8;
+            font-size: 14px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .footer-links a:hover {
+            color: #3498db;
+            transform: translateX(-5px);
+        }
+
+        .footer-contact {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-contact li {
+            margin-bottom: 15px;
+            color: #bdc3c7;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-contact a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-contact a:hover {
+            color: #3498db;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .footer-social a {
+            width: 45px;
+            height: 45px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .footer-social a:hover {
+            transform: translateY(-5px);
+        }
+
+        .footer-social a.fb:hover {
+            background: #1877f2;
+            box-shadow: 0 5px 15px rgba(24,119,242,0.4);
+        }
+
+        .footer-social a.li:hover {
+            background: #0077b5;
+            box-shadow: 0 5px 15px rgba(0,119,181,0.4);
+        }
+
+        .footer-divider {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin: 30px 0;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-bottom p {
+            color: #95a5a6;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-bottom-links a {
+            color: #95a5a6;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .footer-bottom-links a:hover {
+            color: #3498db;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            z-index: 1100;
+        }
+
+        .hamburger .bar {
+            display: block;
+            width: 28px;
+            height: 3px;
+            background: #fff;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
 
         @media screen and (max-width: 768px) {
-            .nav-container { flex-wrap: wrap; }
-            .nav-menu { display: flex; flex-direction: column; width: 100%; gap: 0; background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); border-top: 1px solid rgba(255,255,255,0.1); padding: 10px 0; }
-            .nav-menu li { width: 100%; }
-            .nav-menu a { width: 100%; padding: 14px 25px; border-radius: 0; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 16px; }
-            .nav-menu a:hover { background-color: rgba(52, 152, 219, 0.2); padding-right: 35px; }
-            .nav-menu a.active { border-bottom: 1px solid rgba(52,152,219,0.3); border-left: 4px solid #3498db; }
-            .hero-section { padding: 120px 20px 60px; }
-            .hero-section h1 { font-size: 32px; }
-            .hero-section p { font-size: 16px; }
-            .cta-section h2 { font-size: 26px; }
-            .cta-section p { font-size: 16px; }
-            .footer-grid { grid-template-columns: 1fr; gap: 30px; }
-            .footer-bottom { flex-direction: column; text-align: center; }
-            .footer-bottom-links { justify-content: center; }
+            .nav-container {
+                flex-wrap: wrap;
+            }
+
+            .nav-menu {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                gap: 0;
+                background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+                border-top: 1px solid rgba(255,255,255,0.1);
+                padding: 10px 0;
+            }
+
+            .nav-menu li {
+                width: 100%;
+            }
+
+            .nav-menu a {
+                width: 100%;
+                padding: 14px 25px;
+                border-radius: 0;
+                border-bottom: 1px solid rgba(255,255,255,0.05);
+                font-size: 16px;
+            }
+
+            .nav-menu a:hover {
+                background-color: rgba(52, 152, 219, 0.2);
+                padding-right: 35px;
+            }
+
+            .nav-menu a.active {
+                border-bottom: 1px solid rgba(52,152,219,0.3);
+                border-left: 4px solid #3498db;
+            }
+
+            .hero-section {
+                padding: 120px 20px 60px;
+            }
+
+            .hero-section h1 {
+                font-size: 32px;
+            }
+
+            .hero-section p {
+                font-size: 16px;
+            }
+
+            .cta-section h2 {
+                font-size: 26px;
+            }
+
+            .cta-section p {
+                font-size: 16px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-bottom-links {
+                justify-content: center;
+            }
         }
 
         @media screen and (max-width: 480px) {
-            .hero-section h1 { font-size: 26px; }
-            .hero-section p { font-size: 14px; }
-            .hero-btn { padding: 12px 28px; font-size: 14px; }
-            .nav-logo { font-size: 20px; }
+            .hero-section h1 {
+                font-size: 26px;
+            }
+
+            .hero-section p {
+                font-size: 14px;
+            }
+
+            .hero-btn {
+                padding: 12px 28px;
+                font-size: 14px;
+            }
+
+            .nav-logo {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
@@ -132,6 +454,7 @@
                 <h3>About Ameed Salama</h3>
                 <p>Full Stack Developer specialized in building modern web applications using the latest technologies. I focus on delivering efficient and innovative software solutions.</p>
             </div>
+
 
             <div>
                 <h3>Quick Links</h3>
