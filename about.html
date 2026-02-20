@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Ameed Salama</title>
+    <title>About - Ameed Salama</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">Ameed Salama</a>
-            <button class="hamburger" aria-label="Menu">
+            <button class="hamburger" aria-label="Toggle menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </button>
             <ul class="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="album.html">Album</a></li>
@@ -26,19 +26,53 @@
         </div>
     </nav>
 
-    <section class="hero-section">
-        <div style="max-width: 1200px; margin: 0 auto;">
-            <h1>Ameed Salama</h1>
-            <p>Full Stack Developer</p>
-            <a href="about.html" class="hero-btn">Discover More</a>
+    <section class="about-section" style="padding-top: 140px;">
+        <div class="about-grid">
+            <div style="text-align: center;">
+                <img src="image/me.jpg" alt="Ameed Salama" class="about-img">
+            </div>
+            <div class="about-text">
+                <h2>Hello, I'm Ameed Salama</h2>
+                <p>
+                    Full Stack Developer with a background in Computer Engineering from An-Najah National University. I have hands-on experience in Node.js and Express.js, specializing in building RESTful APIs and working with databases.
+                </p>
+                <p>
+                    I have knowledge of React and Next.js, and I consider myself a collaborative team player who passionately strives for growth in a professional software development environment. I focus on building effective and scalable software solutions using the latest technologies and tools.
+                </p>
+                <div style="margin-top: 25px;">
+                    <a href="contact.html" class="about-btn">Contact Me</a>
+                </div>
+            </div>
         </div>
-    </section>
 
-    <section class="cta-section">
-        <div style="max-width: 800px; margin: 0 auto;">
-            <h2>Have a project in mind?</h2>
-            <p>Let's turn your idea into reality! Contact me now and start your project</p>
-            <a href="contact.html" class="cta-btn">Contact Me Now</a>
+        <div style="max-width: 1200px; margin: 60px auto 0;">
+            <h2 class="section-title">Skills &amp; Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h4>Node.js &amp; Express</h4>
+                    <div class="skill-bar-bg"><div class="skill-bar" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-card">
+                    <h4>React &amp; Next.js</h4>
+                    <div class="skill-bar-bg"><div class="skill-bar" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill-card">
+                    <h4>Databases</h4>
+                    <div class="skill-bar-bg"><div class="skill-bar" style="width: 88%;"></div></div>
+                </div>
+                <div class="skill-card">
+                    <h4>RESTful APIs</h4>
+                    <div class="skill-bar-bg"><div class="skill-bar" style="width: 92%;"></div></div>
+                </div>
+                <div class="skill-card">
+                    <h4>Git &amp; Docker</h4>
+                    <div class="skill-bar-bg"><div class="skill-bar" style="width: 87%;"></div></div>
+                </div>
+                <div class="skill-card">
+                    <h4>JavaScript</h4>
+                    <div class="skill-bar-bg"><div class="skill-bar" style="width: 93%;"></div></div>
+                </div>
+            </div>
         </div>
     </section>
 
